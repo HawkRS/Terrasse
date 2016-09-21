@@ -73,52 +73,50 @@
       <section class="MSection">
         <!--INICIA SLIDER-->
         <div class="Slider">
-          <img src="imágenes/img1.png" alt="SLIDER" id="Slider"/>
+          <img src="imágenes/02_TERRAZA-A.jpg" alt="SLIDER" id="Slider"/>
         </div>
-        <!--TERMINA GRID DE ARTICULOS-->
-        <div class="Articulos">
-          <div class="AG1">
-            <div class="ART">
-              <img class="AIma" src="imágenes/img2.png" alt="Asadores" id="AIma"/>
-              <li><a href="#"></a>ASADORES</li>
-            </div>
-            <div class="ART">
-              <img class="AIma" src="imágenes/img2.png" alt="Firepit" id="AIma"/>
-              <li><a class="ALink" href="#"></a>FIREPIT</li>
-            </div>
+        <!--INICIA INFO DE CONTACTO-->
+        <div class="inside">
+            <h2>Nuestro Contacto</h2>
+				<div class="NContact">
+				    <address>
+				    <b>Código Postal:</b> X X X X X<br>
+				    <b>Estado:</b> México<br>
+				    <b>Telefono:</b> +55 5635600<br>
+				    <b>Correo:</b> ejemplo@correo.com
+				    </address>
+				    <p class="EXTInfo"><b>Mas Información:</b><br>
+				        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
           </div>
-          <div class="AG1">
-            <div class="ART">
-              <img class="AIma" src="imágenes/img2.png" alt="Asadores" id="AIma"/>
-              <li><a href="#"></a>GAZEBOS</li>
-            </div>
-            <div class="ART">
-              <img class="AIma" src="imágenes/img2.png" alt="Firepit" id="AIma"/>
-              <li><a href="#"></a>ACCESORIOS</li>
-            </div>
-          </div>
+        <!--TERMINA INFO DE CONTACTO-->
+        <!--INICIA FORMULARIO DE CONTACTO-->
+        <div class="contform">
+        <h2 id="h2form">Formulario de Contacto</h2>
+            <form id="contacts-form" action="." oninput="range_control_value.value = range_control.valueAsNumber">
+				<fieldset>
+				    <div class="campo">
+				        <label>Nombre: </label>
+				        <input title="Se Necesita un Nombre" type="text" value="" required />
+				    </div>
+				    <div class="campo">
+				        <label>E-mail: </label>
+				        <input type="email" value="" required />
+				    </div>
+				    <div class="campo">
+				        <label>Website:    </label>
+				        <input type="text" value="" placeholder="Ingresa la URL de tu Página" />
+				    </div>
+				    <div class="campo">
+				        <label>Mensaje:    </label>
+				        <textarea cols="1" rows="1" required></textarea>
+				    </div>
+                    <button id="boton" type="submit">Enviar Mensaje</button>	
+				</fieldset>
+            </form>
         </div>
-        <!--INICIA INFO DE LA EMPRESA-->
-        <div class="MInfo">
-          <div class="acerca">
-            <h4>ACERCA DE NOSOTROS</h4>
-            <p class="MPInfo">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div class="compranos">
-            <h4>PORQUE ELEGIR A TERRASSE</h4>
-            <p class="MPInfo">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
+        <!--TERMINA FORMULARIO DE CONTACTO-->
       </section>
     </div>
     <footer>
