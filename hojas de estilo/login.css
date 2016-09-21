@@ -1,0 +1,69 @@
+/*body {
+   background-image: url(fondo.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   color: #262626;
+   font-family: Arial, san-serif;
+}*/
+
+#contact-form {
+   background-color: #00CCFF;
+   width: 100%;
+   padding: 20px;
+   margin: auto;
+   border-radius: 15px;
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+
+   clear: both;
+}
+
+#contact-form input, #contact-form label {
+   font-size: 15px;
+   margin-bottom: 2px;
+   font-family: Arial, san-serif;
+}
+
+#contact-form input {
+   width: 450px;
+   background: #fff;
+   border: 0;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   margin-bottom: 25px;
+   padding: 5px;
+}
+
+#contact-form input:focus {
+   background-color: #E5E6E7;
+}
+
+#contact-form #submit {
+   width: auto;
+   color: black;
+   border: none;
+   background-color: 	#CCCCCC;
+}
+
+#contact-form #submit:hover {
+   background-color: #BFD7C1;
+   color: black;
+}
+
+input:required {
+   box-shadow: none;
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   -o-box-shadow: none;
+}
+
+#contact-form .requerido {
+   font-weight:bold;
+   color: red;
+}
+
+#formvld, #formIvld {
+   color: #6EA070;
+   display:none;
+}
