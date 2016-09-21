@@ -1,56 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
   <head>
     <meta charset="utf-8">
     <title>TERRASSE</title>
-    <link rel="stylesheet" href="/home/greyhawk/Desktop/Terrasse/css/style.css"  type="text/css" media="screen"  charset="utf-8">
-     <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Raleway|Roboto|Roboto+Condensed" rel="stylesheet">
-  </head>
-  <body>
-    <!--HEADER DE LA PAGINA-->
-    <header>
-      <!--INICIA LOGO-->
-      <img class="Logo"src="/home/greyhawk/Desktop/Terrasse/images/terrasse.png" alt="Terrasse" id="MLogo"/>
-      <!--TERMINA LOGO-->
-    </header>
+    <link rel="icon" type="image/ico" href="imágenes/icono.ico">
+    <link rel="stylesheet" href="hojas de estilo/style.css"  type="text/css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Raleway|Roboto|Roboto+Condensed" rel="stylesheet">
+
     <!--INICIA BARRA DE MENU-->
     <nav class="MMenu">
       <ul class="CLista">
-        <li class="MLink"><a href="#"></a>INICIO</li>
-        <li class="MLink"><a href="#"></a>ASADORES</li>
-        <li class="MLink"><a href="#"></a>FIREPIT</li>
-        <li class="MLink"><a href="#"></a>GAZEBO</li>
-        <li class="MLink"><a href="#"></a>GALERIA</li>
-        <li class="MLink"><a href="#"></a>CONTACTO</li>
+        <li class="MLink"><a href="main.html">INICIO</a></li>
+        <li class="MLink"><a href="asadores.html">ASADORES</a></li>
+        <li class="MLink"><a href="firepit.html">FIREPIT</a></li>
+        <li class="MLink"><a href="gazebo.html">GAZEBO</a></li>
+        <li class="MLink"><a href="galeria.html">GALERIA</a></li>
+        <li class="MLink"><a href="contactos.html">CONTACTO</a></li>
       </ul>
     </nav>
     <!--TERMINA BARRA DE MENU-->
+  </head>
+
+  <body>
     <!--INICIA BLOQUE PRINCIPAL-->
     <div class="bloque">
       <!--INICIA BARRA LATERAL-->
       <aside class="Barra">
+
         <!--INICIO DE SESION/INFORMACION DE SESION DE USUARIO-->
-        <div class="Sesion">
-          inicia sesion
+        <div id="contact-form" style="clear: both">
+          <form method="post">
+            <!-- Ingreso de nombre de usuario -->
+            <label for="usuario">Nombre de usuario:<span class="requerido">*</span></label>
+            <input type="text" name="usuario" id="usuario" required="required" autofocus="autofocus">
+            <!-- Ingreso de contraseña -->
+            <label for="clave">Contraseña:<span class="requerido">*</span></label>
+            <input type="password" name="clave" id="clave" required="required" autofocus="autofocus">
+            <!-- Enviar la solicitud -->
+            <input type="submit" value="Iniciar sesión" id="submit">
+            <!-- Mostrar formulario de registro de nvo usuario -->
+            <input type="submit" value="Crear cuenta" id="submit">
+          </form>
         </div>
-        <!--TERMINA SESION-->
+
         <!--INICIA PROMOS-->
         <div class="Promos">
           <h3>PROMOCION DE LA SEMANA</h3>
           <div class="ArtP">
-            <img class="Pima" src="/home/greyhawk/Desktop/Terrasse/images/img3.png" alt="Promos1" id="Pima"/>
+            <img class="Pima" src="imágenes/img3.png" alt="Promos1" id="Pima"/>
             <p>Asador #003</p>
             <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
             <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
           </div>
           <div class="ArtP">
-            <img class="Pima" src="/home/greyhawk/Desktop/Terrasse/images/img3.png" alt="Promos1" id="Pima"/>
+            <img class="Pima" src="imágenes/img3.png" alt="Promos1" id="Pima"/>
             <p>Asador #003</p>
             <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
             <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
           </div>
           <div class="ArtP">
-            <img class="Pima" src="/home/greyhawk/Desktop/Terrasse/images/img3.png" alt="Promos1" id="Pima"/>
+            <img class="Pima" src="imágenes/img3.png" alt="Promos1" id="Pima"/>
             <p>Asador #003</p>
             <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
             <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
@@ -63,27 +73,27 @@
       <section class="MSection">
         <!--INICIA SLIDER-->
         <div class="Slider">
-          <img src="/home/greyhawk/Desktop/Terrasse/images/img1.png" alt="SLIDER" id="Slider"/>
+          <img src="imágenes/img1.png" alt="SLIDER" id="Slider"/>
         </div>
         <!--TERMINA GRID DE ARTICULOS-->
         <div class="Articulos">
           <div class="AG1">
             <div class="ART">
-              <img class="AIma" src="/home/greyhawk/Desktop/Terrasse/images/img2.png" alt="Asadores" id="AIma"/>
+              <img class="AIma" src="imágenes/img2.png" alt="Asadores" id="AIma"/>
               <li><a href="#"></a>ASADORES</li>
             </div>
             <div class="ART">
-              <img class="AIma" src="/home/greyhawk/Desktop/Terrasse/images/img2.png" alt="Firepit" id="AIma"/>
+              <img class="AIma" src="imágenes/img2.png" alt="Firepit" id="AIma"/>
               <li><a class="ALink" href="#"></a>FIREPIT</li>
             </div>
           </div>
           <div class="AG1">
             <div class="ART">
-              <img class="AIma" src="/home/greyhawk/Desktop/Terrasse/images/img2.png" alt="Asadores" id="AIma"/>
+              <img class="AIma" src="imágenes/img2.png" alt="Asadores" id="AIma"/>
               <li><a href="#"></a>GAZEBOS</li>
             </div>
             <div class="ART">
-              <img class="AIma" src="/home/greyhawk/Desktop/Terrasse/images/img2.png" alt="Firepit" id="AIma"/>
+              <img class="AIma" src="imágenes/img2.png" alt="Firepit" id="AIma"/>
               <li><a href="#"></a>ACCESORIOS</li>
             </div>
           </div>
