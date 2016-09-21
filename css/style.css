@@ -41,6 +41,7 @@ h4{
    margin-bottom: 0;
    /*border: 5px solid black;*/
    background-color: #008c43;
+     list-style-type: none;
  }
 .CLista{
   margin-left: auto;
@@ -54,6 +55,7 @@ h4{
   color: white;
   font-size: 1.3em;
   font-family: 'Roboto', sans-serif;
+    list-style-type: none;
 }
 
 .MLink{
@@ -67,7 +69,10 @@ ul{
   list-style-type: none;
 }
 
-li{
+li {
+  list-style-type: none;
+}
+li.MLink a{
   list-style-type: none;
 }
 /*ESTILO SECTION MEDIA*/
@@ -169,7 +174,7 @@ li{
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: row;
-  background-color: #28502e;
+  background-color: #79FC32;
   /*border: 5px solid orange;*/
 }
 
@@ -177,9 +182,29 @@ li{
   width: 100%;
   /*border: 5px solid navy;*/
 }
-.clear{
-  clear: both;
-}
+
+/*INICIA ESTILO PARA CONTACTO*/
+.inside {padding:24px 40px 30px 50px}
+.NContact {width:100%;overflow:hidden}
+.EXTInfo {overflow:hidden}
+#h2form {padding:24px 40px 20px 50px;background:url(../imagenes/f1.png) repeat-x; color: antiquewhite}
+#contacts-form {clear:right;width:100%;overflow:hidden}
+#contacts-form fieldset {border:none;float:left}
+#contacts-form .campo {clear:both;min-height:30px;height:auto}
+#contacts-form label {float:left;width:104px;font-weight:bold}
+#contacts-form input {width:267px;padding:2px 0 2px 3px;border:1px solid #d2d2d2;float:left}
+#contacts-form textarea {width:531px;height:167px;padding:2px 0 2px 3px;border:1px solid #d2d2d2;margin-bottom:15px;overflow:auto;float:left}
+#contacts-form .link1 {float:left}
+.contform {padding:25px 49px 45px 49px}
+#boton {background-image: url(../imagenes/link1-border)}
+
+/*TERMINA ESTILO PARA CONTACTO*/
+
+/*INICIA ESTILO PARA ACERCA DE NOSOTROS*/
+.team li {width:100%;clear:left;vertical-align:top;line-height:1.538em;padding-bottom:20px} 
+.team li img {float:left;margin-bottom: 20px; margin-right: 20px}
+.team li strong {display:block;padding-bottom:6px}
+
 /* Estilo para el login */
 
 #contact-form {
