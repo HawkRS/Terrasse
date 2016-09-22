@@ -123,7 +123,7 @@ h4{
   margin-right: auto;
   width: 90%;
 }
-/*ESTILO SECCION PRINCIPAL*/
+/*ESTILO SECCION PRINCIPAL */
 
 .MSection{
   width: 75%;
@@ -132,7 +132,7 @@ h4{
   display: flex;
   flex-direction: column;
 }
-
+/*INDEX*/
 #Slider{
   display: block;
   margin-top: 3em;
@@ -173,7 +173,34 @@ h4{
 .compranos, .MPInfo{
   text-align: center;
 }
+/*ASADORES*/
+.LAsadores{
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+}
+.AIndividual{
+  display: flex;
+  flex-direction: row;
+  margin: 4em;
+}
+#Asaima, .Asaima, #Pitima, .Pitima, #Gazima, .Gazima{
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.ArtInfo a{
+  text-decoration: none;
+  padding: 5;
+  background-color: #4fb477;
+  color: white;
+}
+
+.ADes{
+  text-align: right;
+}
 /*INCIA FOOTER*/
 
 .INFO{
