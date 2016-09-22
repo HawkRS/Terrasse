@@ -3,6 +3,7 @@ body{
   padding: 0;
   background-color: #E0E1DD;
   font-family: 'Roboto', sans-serif;
+  list-style-type: none;
 }
 
 h3{
@@ -165,7 +166,10 @@ h4{
   margin-left: auto;
   margin-right: auto;
 }
-
+.MLink a{
+  color: #28502E;
+  text-decoration: none;
+}
 .compranos, .MPInfo{
   text-align: center;
 }
@@ -176,10 +180,10 @@ h4{
   text-align: center;
   color: white;
   font-size: .6em;
-  font-family: 'Roboto', sans-serif;
+  font-family:inherit;
   display: flex;
   flex-direction: row;
-  background-color: #79FC32;
+  background-color: #28502E;
   /*border: 5px solid orange;*/
 }
 
@@ -192,7 +196,7 @@ h4{
 .inside {padding:24px 40px 30px 50px}
 .NContact {width:100%;overflow:hidden}
 .EXTInfo {overflow:hidden}
-#h2form {padding:24px 40px 20px 50px;background:url(../imagenes/f1.png) repeat-x; color: antiquewhite}
+#h2form {padding:24px 40px 20px 50px;background:url(../imagenes/f1.png) repeat-x; color: silver}
 #contacts-form {clear:right;width:100%;overflow:hidden}
 #contacts-form fieldset {border:none;float:left}
 #contacts-form .campo {clear:both;min-height:30px;height:auto}
@@ -213,7 +217,7 @@ h4{
 /* Estilo para el login */
 
 #contact-form {
-   background-color: #00CCFF;
+   background-color: #4fb477;
    width: 80%;
 
    padding: 10px;
@@ -229,7 +233,7 @@ h4{
    font-size: 15px;
    margin-left: 5px;
    margin-bottom: 2px;
-   font-family: Arial, san-serif;
+   font-family:inherit;
 }
 
 #contact-form input {
@@ -271,4 +275,70 @@ input:required {
 #contact-form .requerido {
    font-weight:bold;
    color: red;
+}
+/*INICIA ESTILO DEL FOOTER*/
+
+#Cuenta{
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+.INFO{
+  text-align: center;
+  color: white;
+  font-size: .8em;
+  font-family:inherit;
+  display:flex;
+
+  background-color: #28502E;
+  /*border: 5px solid orange;*/
+}
+.FCont{
+  width: 100%;
+  /*border: 5px solid navy;*/
+}
+.FLink a, .ULink a{
+  color: white;
+  text-decoration: none;
+}
+
+.FMenu{
+  list-style-type: none;
+  margin: 1em 3em 1em 11em;
+  text-align: left;
+}
+.Conta{
+  margin: 1em 3em 1em 8em;
+  text-align: left;
+}
+
+#RFace, #RYouT, #RInsta{
+  width: 10%;
+}
+.LEGAL{
+
+  text-align: center;
+  color: white;
+  font-family: inherit;
+  background-color: #3c3c3c;
+}
+.LT{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.LHM{
+    font-size: .5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#HMima, #Roman92, #Dante0{
+  margin: 0.1em .7em;
+  width: 3%;
+}
+
+.Team a{
+  color: white;
+  font-family: inherit;
+  text-decoration: none;
+  margin-bottom: 2em;
 }
