@@ -11,7 +11,7 @@
     <!--INICIA BARRA DE MENU-->
     <nav class="MMenu">
       <ul class="CLista">
-        <li class="MLink"><a href="main.html">INICIO</a></li>
+        <li class="MLink"><a href="Index.html">INICIO</a></li>
         <li class="MLink"><a href="asadores.html">ASADORES</a></li>
         <li class="MLink"><a href="firepit.html">FIREPIT</a></li>
         <li class="MLink"><a href="gazebo.html">GAZEBO</a></li>
@@ -32,15 +32,15 @@
         <div id="contact-form" style="clear: both">
           <form method="post">
             <!-- Ingreso de nombre de usuario -->
-            <label for="usuario">Nombre de usuario:<span class="requerido">*</span></label>
-            <input type="text" name="usuario" id="usuario" required="required" autofocus="autofocus">
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" name="usuario" id="usuario" autofocus="autofocus">
             <!-- Ingreso de contraseña -->
-            <label for="clave">Contraseña:<span class="requerido">*</span></label>
-            <input type="password" name="clave" id="clave" required="required" autofocus="autofocus">
+            <label for="clave">Contraseña:</label>
+            <input type="password" name="clave" id="clave" autofocus="autofocus">
             <!-- Enviar la solicitud -->
             <input type="submit" value="Iniciar sesión" id="submit">
             <!-- Mostrar formulario de registro de nvo usuario -->
-            <input type="submit" value="Crear cuenta" id="submit">
+            <input type="submit" value="Crear cuenta" id="usrNvo" onclick="windows.location.href='Index.html'">
           </form>
         </div>
 
@@ -112,7 +112,7 @@
 				        <label>Mensaje:    </label>
 				        <textarea cols="1" rows="1" required></textarea>
 				    </div>
-                    <button id="boton" type="submit">Enviar Mensaje</button>	
+                    <button id="boton" type="submit">Enviar Mensaje</button>
 				</fieldset>
             </form>
         </div>

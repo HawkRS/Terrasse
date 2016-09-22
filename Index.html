@@ -15,10 +15,10 @@
           <img class="Logo"src="imagenes/terrasse.png" alt="Terrasse" id="MLogo"/>
           <nav>
             <ul>
-              <li class="inicio">     <a href="index.html">INICIO</a></li>
+              <li class="inicio">     <a href="Index.html">INICIO</a></li>
               <li class="asadores">   <a href="asadores.html">ASADORES</a></li>
               <li class="firepit">    <a href="firepit.html">FIREPIT</a></li>
-              <li class="gazebos">    <a href="gazebos.html">GAZEBOS</a></li>
+              <li class="gazebos">    <a href="gazebo.html">GAZEBOS</a></li>
               <li class="accesorios"> <a href="accesorios.html">ACCESORIOS</a></li>
               <li class="galeria">    <a href="galeria.html">GALERIA</a></li>
               <li class="contacto">   <a href="contacto.html">CONTACTO</a></li>
@@ -35,15 +35,15 @@
         <div id="contact-form" style="clear: both">
           <form method="post">
             <!-- Ingreso de nombre de usuario -->
-            <label for="usuario">Nombre de usuario:<span class="requerido">*</span></label>
-            <input type="text" name="usuario" id="usuario" required="required" autofocus="autofocus">
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" name="usuario" id="usuario" autofocus="autofocus">
             <!-- Ingreso de contraseña -->
-            <label for="clave">Contraseña:<span class="requerido">*</span></label>
-            <input type="password" name="clave" id="clave" required="required" autofocus="autofocus">
+            <label for="clave">Contraseña:</label>
+            <input type="password" name="clave" id="clave" autofocus="autofocus">
             <!-- Enviar la solicitud -->
             <input type="submit" value="Iniciar sesión" id="submit">
             <!-- Mostrar formulario de registro de nvo usuario -->
-            <input type="submit" value="Crear cuenta" id="submit">
+            <input type="button" value="Crear cuenta" id="usrNvo" onclick="window.location.href='registro.html'">
           </form>
         </div>
 
