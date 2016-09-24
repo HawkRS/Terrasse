@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <title>TERRASSE</title>
+    <link rel="icon" type="image/ico" href="imagenes/icono.ico">
+    <link rel="stylesheet" href="css/style.css"  type="text/css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Raleway|Roboto|Roboto+Condensed" rel="stylesheet">
+
+  </head>
+  <body>
+    <!--INICIA BARRA DE MENU-->
+    <header>
+          <img class="Logo"src="imagenes/terrasse.png" alt="Terrasse" id="MLogo"/>
+          <nav>
+            <ul>
+              <li class="inicio">     <a href="Index.html">INICIO</a></li>
+              <li class="asadores">   <a href="asadores.html">ASADORES</a></li>
+              <li class="firepit">    <a href="firepit.html">FIREPIT</a></li>
+              <li class="gazebos">    <a href="gazebo.html">GAZEBOS</a></li>
+              <li class="accesorios"> <a href="accesorios.html">ACCESORIOS</a></li>
+              <li class="galeria">    <a href="galeria.html">GALERIA</a></li>
+              <li class="contacto">   <a href="contacto.html">CONTACTO</a></li>
+            </ul>
+          </nav>
+        </header>
+    <!--TERMINA BARRA DE MENU-->
+    <!--INICIA BLOQUE PRINCIPAL-->
+    <div class="bloque">
+      <!--INICIA BARRA LATERAL-->
+      <aside class="Barra">
+
+        <!--INICIO DE SESION/INFORMACION DE SESION DE USUARIO-->
+        <div id="contact-form" style="clear: both">
+          <form method="post">
+            <!-- Ingreso de nombre de usuario -->
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" name="usuario" id="usuario" autofocus="autofocus">
+            <!-- Ingreso de contraseña -->
+            <label for="clave">Contraseña:</label>
+            <input type="password" name="clave" id="clave" autofocus="autofocus">
+            <!-- Enviar la solicitud -->
+            <input type="submit" value="Iniciar sesión" id="submit">
+            <!-- Mostrar formulario de registro de nvo usuario -->
+            <input type="button" value="Crear cuenta" id="usrNvo" onclick="window.location.href='registro.html'">
+          </form>
+        </div>
+
+        <!--INICIA PROMOS-->
+        <div class="Promos">
+          <h3>PROMOCION DE LA SEMANA</h3>
+          <div class="ArtP">
+            <img class="Pima" src="imagenes/img3.png" alt="Promos1" id="Pima"/>
+            <p>Asador #003</p>
+            <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
+            <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+          </div>
+          <div class="ArtP">
+            <img class="Pima" src="imagenes/img3.png" alt="Promos1" id="Pima"/>
+            <p>Asador #003</p>
+            <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
+            <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+          </div>
+          <div class="ArtP">
+            <img class="Pima" src="imagenes/img3.png" alt="Promos1" id="Pima"/>
+            <p>Asador #003</p>
+            <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
+            <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+          </div>
+        </div>
+        <!--TERMINA PROMOS-->
+      </aside>
+      <!--TERMINA BARRA LATERAL-->
+      <!--INICIA SECCION PRINCIPAL-->
+      <section class="MSection">
+        <!--INICIA SLIDER-->
+        <div class="Slider">
+          <img src="imagenes/img1.png" alt="SLIDER" id="Slider"/>
+        </div>
+        <!--TERMINA GRID DE ARTICULOS-->
+        <div class="Articulos">
+          <div class="AG1">
+            <div class="ART">
+              <img class="AIma" src="imagenes/img2.png" alt="Asadores" id="AIma"/>
+              <li class="MLink"><a href="asadores.html">ASADORES</a></li>
+            </div>
+            <div class="ART">
+              <img class="AIma" src="imagenes/img2.png" alt="Firepit" id="AIma"/>
+              <li class="MLink"><a href="firepit.html">FIREPIT</a></li>
+            </div>
+          </div>
+          <div class="AG1">
+            <div class="ART">
+              <img class="AIma" src="imagenes/img2.png" alt="Asadores" id="AIma"/>
+              <li class="MLink"><a href="gazebos.html">GAZEBOS</a></li>
+            </div>
+            <div class="ART">
+              <img class="AIma" src="imagenes/img2.png" alt="Firepit" id="AIma"/>
+              <li class="MLink"><a href="accesorios.html">ACCESORIOS</a></li>
+            </div>
+          </div>
+        </div>
+        <!--INICIA INFO DE LA EMPRESA-->
+        <div class="MInfo">
+          <div class="acerca">
+            <h4>ACERCA DE NOSOTROS</h4>
+            <p class="MPInfo">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="compranos">
+            <h4>PORQUE ELEGIR A TERRASSE</h4>
+            <p class="MPInfo">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="INFO">
+      <div class="FCont" id="Mapa">
+        <h5>MAPA DEL SITIO</h5>
+        <ul class="FMenu">
+          <li class="FLink">      <a href="Index.html">Inicio</a></li>
+          <li class="FLink">   <a href="asadores.html">Asadores</a></li>
+          <li class="FLink">    <a href="firepit.html">Firepit</a></li>
+          <li class="FLink">    <a href="gazebos.html">Gazebos</a></li>
+          <li class="FLink"> <a href="accesorios.html">Accesorios</a></li>
+          <li class="FLink">    <a href="galeria.html">Galeria</a></li>
+          <li class="FLink">   <a href="contacto.html">Contacto</a></li>
+          <li class="FLink">    <a href="gazebos.html">Mi cuenta</a></li>
+          <li class="FLink"> <a href="accesorios.html">Preguntas frecuentes</a></li>
+          <li class="FLink">    <a href="galeria.html">Politicas</a></li>
+          <li class="FLink">   <a href="contacto.html">Aviso legal</a></li>
+        </ul>
+      </div>
+
+      <div class="FCont" id="Cuenta">
+        <h5>MI CUENTA EN LINEA</h5>
+        <ul class="FMenu">
+          <li class="ULink">    <a href="#">Mi perfil</a></li>
+          <li class="ULink">    <a href="#">Ajustes</a></li>
+          <li class="ULink">    <a href="#">Mi carito</a></li>
+          <li class="ULink">    <a href="#">Historial de compras</a></li>
+        </ul>
+      </div>
+      <div class="FCont" id="Cont">
+        <h5>CONTACTO</h5>
+        <div class="Conta">
+          <p>Lauro Badillo Diaz #420</p>
+          <p>Col. Brisas de Chapala</p>
+          <p>Tlaquepaque, Jalisco</p>
+          <p>Telefonos:  36-70-69-91  |  333-968-9393</p>
+          <p>Ventas@Terrasse.com.mx</p>
+          <h5>SIGUENOS</h5>
+          <a href="#"><img src="imagenes/face.png" alt="Facebook" id="RFace"/></a>
+          <a href="#"><img src="imagenes/youtube.png" alt="Youtube" id="RYouT"/></a>
+          <a href="#"><img src="imagenes/insta.png" alt="Instagram" id="RInsta"/></a>
+        </div>
+      </div>
+
+    </div>
+      <div class="LEGAL">
+      <div class="LT">
+        2016 Terrasse
+      </div>
+      <div class="LHM">
+        <p>
+          Developed by:
+        </p>
+        <img src="imagenes/hmwhite.png" alt="Hawk Media" id="HMima"/>
+        <img src="imagenes/king-bradley.jpg" alt="Roman" id="Roman92"/>
+        <img src="imagenes/escanor.jpg" alt="Dante" id="Dante0"/>
+        <p>Hawk Media | Romanbr1992 | DanteCero</p>
+        <li class="Team"><a href="Team.html"><h5>ACERCA DE NOSOTROS</h5></a></li>
+      </div>
+    </div>
+    </footer>
+  </body>
+</html>
