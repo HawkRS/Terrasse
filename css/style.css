@@ -90,11 +90,12 @@ h4{
 /*ESTILO BARRA */
 
 .Barra{
-  width: 25%;
+  width: 20%;
   background-color: #d1d3c4;
   border: 5px solid white;
   display: flex;
   flex-direction: column;
+  float: left;
 }
 .Sesion, .Promos{
   /*border: 5px solid orange;*/
