@@ -23,14 +23,59 @@
       </ul>
     </nav>
     <!--TERMINA BARRA DE MENU-->
+
+    <!--INICIA BARRA LATERAL-->
+    <aside class="Barra">
+
+      <!--INICIO DE SESION/INFORMACION DE SESION DE USUARIO-->
+      <div id="contact-form" style="clear: both">
+        <form method="post">
+          <!-- Ingreso de nombre de usuario -->
+          <label for="usuario">Nombre de usuario:</label>
+          <input type="text" name="usuario" id="usuario" autofocus="autofocus">
+          <!-- Ingreso de contraseña -->
+          <label for="clave">Contraseña:</label>
+          <input type="password" name="clave" id="clave" autofocus="autofocus">
+          <!-- Enviar la solicitud -->
+          <input type="submit" value="Iniciar sesión" id="submit">
+          <!-- Mostrar formulario de registro de nvo usuario -->
+          <input type="button" value="Crear cuenta" id="usrNvo" onclick="window.location.href='registro.html'">
+        </form>
+      </div>
+
+      <!--INICIA PROMOS-->
+      <div class="Promos">
+        <h3>PROMOCION DE LA SEMANA</h3>
+        <div class="ArtP">
+          <img class="Pima" src="imagenes/img3.png" alt="Promos1" id="Pima"/>
+          <p>Asador #003</p>
+          <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
+          <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+        </div>
+        <div class="ArtP">
+          <img class="Pima" src="imagenes/img3.png" alt="Promos1" id="Pima"/>
+          <p>Asador #003</p>
+          <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
+          <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+        </div>
+        <div class="ArtP">
+          <img class="Pima" src="imagenes/img3.png" alt="Promos1" id="Pima"/>
+          <p>Asador #003</p>
+          <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
+          <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+        </div>
+      </div>
+      <!--TERMINA PROMOS-->
+    </aside>
+    <!--TERMINA BARRA LATERAL-->
   </head>
 
   <body>
-
-    <div class="tabla" id="fondo">
+    <!--Comienza tabla con images de los productos -->
+    <div class="tabla">
       <img src="img/terra.jpg" alt="#" id="imagen" />
-      <table>
 
+      <table>
         <thead>
           <tr>
             <th colspan="4" style="text-aling: center">
@@ -89,7 +134,7 @@
 
   </body>
 
-  <footer>
+  <footer class="clear">
     <div class="INFO">
     <div class="FCont" id="Mapa">
       <h5>MAPA DEL SITIO</h5>
