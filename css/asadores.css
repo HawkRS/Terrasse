@@ -1,0 +1,12 @@
+.seccion{
+  width: 90%;
+  background-color: #d1d3c4;
+  border: 5px solid white;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+.img{
+  display: block;
+}
