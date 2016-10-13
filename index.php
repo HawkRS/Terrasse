@@ -4,18 +4,23 @@
   <head>
     <meta charset="utf-8">
     <title>TERRASSE</title>
+    <link rel="stylesheet" href="css/carrusel.css" type="text/css" media="screen">
     <?php include 'head.php'; ?>
   </head>
 
   <body>
+    <div class="contenedor">
+      <div class="slides">
+        <img src="img/carrusel/index/01.jpg" alt="" />
+        <img src="img/carrusel/index/02.jpg" alt="" />
+        <img src="img/carrusel/index/03.jpg" alt="" />
+      </div>
+
+    </div>
         <!--INICIA BLOQUE PRINCIPAL-->
     <div class="bloque">
       <!--INICIA SECCION PRINCIPAL-->
       <section class="MSection">
-        <!--INICIA SLIDER-->
-        <div class="Slider">
-          <img src="img/ofertas/escala/XYimg1.png" alt="SLIDER" id="Slider"/>
-        </div>
         <!--TERMINA GRID DE ARTICULOS-->
         <div class="articulos">
           <div class="AG1">
@@ -62,6 +67,26 @@
         </div>
       </section>
     </div>
+
+    <!--Script para activar el carrusel-->
+    <script src="js/jquery.js"></script>
+		<script src="js/jquery.slides.js"></script>
+		<script>
+
+				$(function(){
+				$(".slides").slidesjs({
+					play: {
+						active: true,
+						effect: "slide",
+						interval: 3000,
+						auto: true,
+						swap: true,
+						pauseOnHover: false,
+						restartDelay: 2500
+				    }
+				});
+				});
+		</script>
   </body>
 
   <footer class="clear">
