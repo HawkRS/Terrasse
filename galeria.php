@@ -66,7 +66,6 @@
             <img src="img/noImg.png" alt="no disponible" />
           </td>
         </tr>
-
       </table>
     </div>
 
