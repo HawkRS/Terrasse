@@ -4,16 +4,23 @@
   <head>
     <meta charset="utf-8">
     <title>TERRASSE</title>
+    <link rel="stylesheet" href="css/carrusel.css" type="text/css" media="screen">
     <?php include 'head.php';?>
   </head>
 
   <body>
+    <!--Carrusel-->
+    <div class="contenedor">
+      <div class="slides">
+        <img src="img/carrusel/contacto/01.jpg" alt="#" />
+        <img src="img/carrusel/contacto/02.jpg" alt="#" />
+        <img src="img/carrusel/contacto/03.jpg" alt="#" />
+        <img src="img/carrusel/contacto/04.jpg" alt="#" />
+      </div>
+
+    </div>
       <!--INICIA SECCION PRINCIPAL-->
       <section class="MSection">
-        <!--INICIA SLIDER-->
-        <div class="Slider">
-          <img src="img/fondos/terraza.jpg" alt="SLIDER" id="Slider"/>
-        </div>
         <!--INICIA INFO DE CONTACTO-->
         <div class="inside">
             <h2>Nuestro Contacto</h2>
@@ -59,6 +66,27 @@
         <!--TERMINA FORMULARIO DE CONTACTO-->
       </section>
     </div>
+
+    <!--Script para activar el carrusel-->
+    <script src="js/jquery.js"></script>
+		<script src="js/jquery.slides.js"></script>
+		<script>
+
+				$(function(){
+				$(".slides").slidesjs({
+					play: {
+						active: true,
+						effect: "slide",
+						interval: 3000,
+						auto: true,
+						swap: true,
+						pauseOnHover: false,
+						restartDelay: 2500
+				    }
+				});
+				});
+		</script>
+
   </body>
 
   <footer class="clear">
