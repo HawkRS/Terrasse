@@ -233,7 +233,7 @@ head{
 .inside {padding:24px 40px 30px 50px}
 .NContact {width:100%;overflow:hidden}
 .EXTInfo {overflow:hidden}
-#h2form {padding:24px 40px 20px 50px;background:url(../imagenes/f1.png) repeat-x; color: silver}
+#h2form {padding: 5px; background-image:url("../img/barra.png"); repeat-x; color: black}*/
 #contacts-form {clear:right;width:100%;overflow:hidden}
 #contacts-form fieldset {border:none;float:left}
 #contacts-form .campo {clear:both;min-height:30px;height:auto}
@@ -242,7 +242,7 @@ head{
 #contacts-form textarea {width:531px;height:167px;padding:2px 0 2px 3px;border:1px solid #d2d2d2;margin-bottom:15px;overflow:auto;float:left}
 #contacts-form .link1 {float:left}
 .contform {padding:25px 49px 45px 49px}
-#boton {background-image: url(../imagenes/link1-border)}
+#boton {background-image: url(../img/link1-border)}
 
 /*TERMINA ESTILO PARA CONTACTO*/
 
