@@ -12,7 +12,7 @@
       <section class="MSection">
         <!--INICIA SLIDER-->
         <div class="Slider">
-          <img src="imagenes/02_TERRAZA-A.jpg" alt="SLIDER" id="Slider"/>
+          <img src="img/fondos/terraza.jpg" alt="SLIDER" id="Slider"/>
         </div>
         <!--INICIA INFO DE CONTACTO-->
         <div class="inside">
