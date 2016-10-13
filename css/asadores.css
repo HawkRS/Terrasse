@@ -7,6 +7,10 @@
   float: left;
 }
 
-.img{
-  display: block;
+.alinD{
+  text-align: right;
+}
+
+.psxy{
+  margin-right: 25%;
 }
