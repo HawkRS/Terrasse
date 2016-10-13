@@ -33,7 +33,7 @@
         <!-- Enviar la solicitud -->
         <input type="submit" value="Iniciar sesión" id="submit">
         <!-- Mostrar formulario de registro de nvo usuario -->
-        <input type="button" value="Crear cuenta" id="usrNvo" onclick="window.location.href='registro.html'">
+        <input type="button" value="Crear cuenta" id="usrNvo" onclick="window.location.href='registro.php'">
       </form>
     </div>
 
