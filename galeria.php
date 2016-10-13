@@ -5,14 +5,22 @@
     <meta charset="utf-8">
     <title>GALERIA | TERRASSE</title>
     <link rel="stylesheet" href="css/galeria.css"  type="text/css" media="screen">
+    <link rel="stylesheet" href="css/carrusel.css" type="text/css" media="screen">
     <?php include 'head.php'; ?>
   </head>
 
   <body>
+    <!--Carrusel-->
+    <div class="contenedor">
+      <div class="slides">
+        <img src="img/carrusel/galeria/01.jpg" alt="#" />
+        <img src="img/carrusel/galeria/02.jpg" alt="#" />
+        <img src="img/carrusel/galeria/03.jpg" alt="#" />
+      </div>
+    </div>
+
     <!--Comienza tabla con images de los productos -->
     <div class="tabla">
-      <img src="img/fondos/terra.jpg" alt="#" id="imagen" />
-
       <table>
         <thead>
           <tr>
@@ -68,7 +76,26 @@
         </tr>
       </table>
     </div>
+    
+    <!--Script para activar el carrusel-->
+    <script src="js/jquery.js"></script>
+		<script src="js/jquery.slides.js"></script>
+		<script>
 
+				$(function(){
+				$(".slides").slidesjs({
+					play: {
+						active: true,
+						effect: "slide",
+						interval: 3000,
+						auto: true,
+						swap: true,
+						pauseOnHover: false,
+						restartDelay: 2500
+				    }
+				});
+				});
+		</script>
   </body>
 
   <footer class="clear">
