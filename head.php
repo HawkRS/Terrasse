@@ -1,6 +1,6 @@
 <div>
   <link rel="icon" href="icono.ico">
-  <link rel="stylesheet" href="css/style.css"  type="text/css" media="screen">
+  <link rel="stylesheet" href="css/index.css"  type="text/css" media="screen">
   <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Raleway|Roboto|Roboto+Condensed" rel="stylesheet">
 
   <!--INICIA BARRA DE MENU-->
