@@ -20,63 +20,65 @@
     </div>
 
     <!--Comienza tabla con images de los productos -->
-    <div class="tabla">
-      <table>
-        <thead>
+    <div class="contImg">
+      <div class="tabla ocultar">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="4" style="text-aling: center">
+                <h3>Imágenes de muestra</h3>
+              </th>
+            </tr>
+          </thead>
+
           <tr>
-            <th colspan="4" style="text-aling: center">
-              <h3>Imágenes de muestra</h3>
-            </th>
+            <td>
+              <img class="zoom" src="img/gazebos/escala/XYgazebo1.jpg" alt="XYgazebo" />
+            </td>
+            <td>
+              <img class="zoom" src="img/gazebos/escala/XYgazebo2.jpg" alt="XYgazebo" />
+            </td>
+            <td>
+              <img class="zoom" src="img/gazebos/escala/XYgazebo3.jpg" alt="XYgazebo" />
+            </td>
+            <td>
+              <img class="zoom" src="img/noImg.png" alt="no disponible" />
+            </td>
           </tr>
-        </thead>
 
-        <tr>
-          <td>
-            <img src="img/gazebos/escala/XYgazebo1.jpg" alt="XYgazebo" />
-          </td>
-          <td>
-            <img src="img/gazebos/escala/XYgazebo2.jpg" alt="XYgazebo" />
-          </td>
-          <td>
-            <img src="img/gazebos/escala/XYgazebo3.jpg" alt="XYgazebo" />
-          </td>
-          <td>
-            <img src="img/noImg.png" alt="no disponible" />
-          </td>
-        </tr>
+          <tr>
+            <td>
+              <img class="zoom" src="img/asadores/escala/XYasador1.jpg" alt="XYasador" />
+            </td>
+            <td>
+              <img class="zoom" src="img/asadores/escala/XYasador2.jpg" alt="XYasador" />
+            </td>
+            <td>
+              <img class="zoom" src="img/asadores/escala/XYasador3.jpg" alt="XYasador" />
+            </td>
+            <td>
+              <img class="zoom" src="img/noImg.png" alt="no disponible" />
+            </td>
+          </tr>
 
-        <tr>
-          <td>
-            <img src="img/asadores/escala/XYasador1.jpg" alt="XYasador" />
-          </td>
-          <td>
-            <img src="img/asadores/escala/XYasador2.jpg" alt="XYasador" />
-          </td>
-          <td>
-            <img src="img/asadores/escala/XYasador3.jpg" alt="XYasador" />
-          </td>
-          <td>
-            <img src="img/noImg.png" alt="no disponible" />
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <img src="img/firepit/escala/XYfirepit1.jpg" alt="XYfirepit" />
-          </td>
-          <td>
-            <img src="img/firepit/escala/XYfirepit2.jpg" alt="XYfirepit" />
-          </td>
-          <td>
-            <img src="img/firepit/escala/XYfirepit3.jpg" alt="XYfirepit" />
-          </td>
-          <td>
-            <img src="img/noImg.png" alt="no disponible" />
-          </td>
-        </tr>
-      </table>
+          <tr>
+            <td>
+              <img class="zoom" src="img/firepit/escala/XYfirepit1.jpg" alt="XYfirepit" />
+            </td>
+            <td>
+              <img class="zoom" src="img/firepit/escala/XYfirepit2.jpg" alt="XYfirepit" />
+            </td>
+            <td>
+              <img class="zoom" src="img/firepit/escala/XYfirepit3.jpg" alt="XYfirepit" />
+            </td>
+            <td>
+              <img class="zoom" src="img/noImg.png" alt="no disponible" />
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
-    
+
     <!--Script para activar el carrusel-->
     <script src="js/jquery.js"></script>
 		<script src="js/jquery.slides.js"></script>
