@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
 }
+
 .contenedor {
   width: 70%;
   margin: 10px 0px 5px 35%;
@@ -9,6 +10,10 @@
 
 .slides {
   width: 70%;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .slides img {
@@ -29,7 +34,7 @@
 
 .slidesjs-pagination li a {
 	display:block;
-	padding:10px 20px;
+	padding:10px 15px;
 	color:#fff;
 	text-decoration:none;
 }
@@ -43,10 +48,10 @@
 }
 
 .slidesjs-navigation{
-	background:#000;
-	color:#fff;
+	background: black;
+	color: white;
 	text-decoration:none;
 	display:inline-block;
-	padding:13.5px 20px;
+	padding:10px 20px;
 	float:right;
 }
