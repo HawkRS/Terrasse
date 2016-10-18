@@ -258,8 +258,7 @@ head{
    width: 80%;
 
    padding: 10px;
-   margin-top: 5%;
-   margin-left: 5%;
+   margin: 5%;
 
    border-radius: 10px;
    -moz-border-radius: 15px;
@@ -291,15 +290,24 @@ head{
 }
 
 #contact-form #submit {
-   width: auto;
+   width: 100px;
+   height: 25px;
    color: black;
-   border: none;
+   border-radius: 10px;
    background-color: 	#CCCCCC;
 }
 
-#contact-form #submit:hover {
-   background-color: #BFD7C1;
-   color: black;
+#contact-form #nvoUsr {
+  width: 100px;
+  height: 25px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #CCCCCC;
+}
+
+#nvoUsr a {
+  text-decoration: none;
+  color: black;
 }
 
 input:required {
