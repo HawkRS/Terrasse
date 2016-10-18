@@ -16,7 +16,7 @@ body{
 }
 
 #envoltura{
-        position:absolute;
+    position:absolute;
     /*left y top al 50% para que quede centrado en la pantalla*/
     left:50%;
     top:40%;
@@ -55,6 +55,30 @@ body{
     /*aumentando el 2px 'aparece' un borde*/
     border-width: 2px 0;
     padding:15px 35px;
+}
+
+#btG {
+  margin: 10px 5px 15px;
+}
+
+#btC {
+  margin: 10px 20px 15px;
+}
+
+#btC a {
+  text-decoration: none;
+  color: black;
+}
+
+#btG, #btC {
+  width: 100px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#btG:hover, #btC:hover {
+  background-color: gray;
 }
 
 label{
