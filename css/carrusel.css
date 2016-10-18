@@ -4,7 +4,7 @@
 }
 
 .contenedor {
-  width: 70%;
+  width: 65%;
   margin: 10px 0px 5px 35%;
 }
 
@@ -16,7 +16,7 @@
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-.slides img {
+.slides .Pima {
   width: 100%;
   position: relative;
   left: 25%;
