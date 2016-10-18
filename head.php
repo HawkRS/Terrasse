@@ -40,24 +40,64 @@
     <!--INICIA PROMOS-->
     <div class="Promos">
       <h3>PROMOCION DE LA SEMANA</h3>
-      <div class="ArtP">
-        <img class="Pima" src="img/ofertas/escala/XYimg3.jpg" alt="Promos1" id="Pima"/>
-        <p>Asador #003</p>
-        <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
-        <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+      <div class="contenedorOf">
+
+        <div class="ofertas ocultar">
+          <img class="mvDer" src="img/ofertas/escala/XYimg3.jpg" alt="#" />
+          <div class="overlay"></div>
+          <div class="texto">
+            <p>Asador #003</p>
+          </div>
+          <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
+          <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+        </div>
       </div>
-      <div class="ArtP">
-        <img class="Pima" src="img/ofertas/escala/XYimg3.jpg" alt="Promos1" id="Pima"/>
-        <p>Asador #003</p>
-        <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
-        <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+
+      <div class="contenedorOf">
+
+        <div class="ofertas ocultar">
+          <img class="mvDer" src="img/ofertas/escala/XYimg3.jpg" alt="#" />
+          <div class="overlay"></div>
+          <div class="texto">
+            <p>Asador #003</p>
+          </div>
+          <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
+          <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+        </div>
       </div>
-      <div class="ArtP">
-        <img class="Pima" src="img/ofertas/escala/XYimg3.jpg" alt="Promos1" id="Pima"/>
-        <p>Asador #003</p>
-        <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
-        <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+
+      <div class="contenedorOf">
+
+        <div class="ofertas ocultar">
+          <img class="mvDer" src="img/ofertas/escala/XYimg3.jpg" alt="#" />
+          <div class="overlay"></div>
+          <div class="texto">
+            <p>Asador #003</p>
+          </div>
+          <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
+          <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+        </div>
       </div>
+      <!--<div class="contenedor">
+        <div class="ArtP ocultar">
+          <img class="Otra" src="img/ofertas/escala/XYimg3.jpg" alt="Promos1" id="Pima"/>
+          <div class="overlay"></div>
+          <div class="texto">nada
+          </div>
+        </div>
+        <div class="ArtP">
+          <img class="Pima" src="img/ofertas/escala/XYimg3.jpg" alt="Promos1" id="Pima"/>
+          <p>Asador #003</p>
+          <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
+          <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+        </div>
+        <div class="ArtP">
+          <img class="Pima" src="img/ofertas/escala/XYimg3.jpg" alt="Promos1" id="Pima"/>
+          <p>Asador #003</p>
+          <p><span class="FC1">Precio regular: </span><span class="PReg">$2500</span></p>
+          <p><span class="FC1">Precio por promocion: </span><span class="PPro">$1499</span></p>
+        </div>
+      </div>-->
     </div>
     <!--TERMINA PROMOS-->
   </aside>
