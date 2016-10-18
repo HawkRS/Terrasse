@@ -26,14 +26,16 @@
   </ul>
 </div>
 <div class="FCont" id="Cont">
-  <h5>CONTACTO</h5>
-  <div class="Conta">
-    <p>Lauro Badillo Diaz #420</p>
-    <p>Col. Brisas de Chapala</p>
-    <p>Tlaquepaque, Jalisco</p>
-    <p>Telefonos:  36-70-69-91  |  333-968-9393</p>
-    <p>Ventas@Terrasse.com.mx</p>
-    <h5>Siguenos en:</h5>
+  <address class="#">
+    <h5>CONTACTO</h5>
+    <div class="Conta span">
+      <p>Lauro Badillo Diaz #420</p>
+      <p>Col. Brisas de Chapala</p>
+      <p>Tlaquepaque, Jalisco</p>
+      <p>Telefonos:  36-70-69-91  |  333-968-9393</p>
+      <p>Ventas@Terrasse.com.mx</p>
+      <h5>Siguenos en:</h5>
+  </address>
 
     <!--Redes sociales-->
     <a href="#"><img src="img/RS/face.png" alt="Facebook" id="Rfb"/></a>
