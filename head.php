@@ -30,10 +30,10 @@
         <!-- Ingreso de contraseña -->
         <label for="clave">Contraseña:</label>
         <input type="password" name="clave" id="clave" autofocus="autofocus">
-        <!-- Enviar la solicitud -->
-        <input type="submit" value="Iniciar sesión" id="submit">
-        <!-- Mostrar formulario de registro de nvo usuario -->
-        <input type="button" value="Crear cuenta" id="usrNvo" onclick="window.location.href='registro.php'">
+        <!-- Enviar la solicitud-->
+        <button type="submit" name="submit" id="submit">Iniciar sesión</button>
+        <!-- Mostrar formulario de registro de nvo usuario-->
+        <button type="button" name="nvoUsr" id="nvoUsr" ><a href="registro.php">Crear cuenta</a></button>
       </form>
     </div>
 
