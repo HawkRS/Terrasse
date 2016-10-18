@@ -27,6 +27,19 @@
         alert("Solo tienen que ser digitos");
       }
 
+      var cad = document.getElementById('cel').value;
+      cadAux = "";
+
+      for (var i = 0; i < cad.length; i++) {
+          if (cad.charAt(i) != ' ') {
+            cadAux += cad.charAt(i);
+          }
+      }
+
+      if (isNaN(cadAux)) {
+        alert("Solo tienen que ser digitos");
+      }
+
     }
 ;
     //Validar la contraseña
@@ -80,7 +93,7 @@
               <input type="password" name="confirmaClv" id="confirmaClv" required="required">
 
               <!-- guardar datos -->
-              <button type="submit" name="btG" id="btG">Guardar</button>
+              <button type="button" name="btG" id="btG" onclick="validarClv(),validarNum()">Guardar</button>
               <!-- calcelar registro -->
               <button type="button" name="btC" id="btC"><a href="index.php">Cancelar</a></button>
             </form>
