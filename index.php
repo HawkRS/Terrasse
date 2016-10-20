@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <title>TERRASSE</title>
     <link rel="stylesheet" href="css/carrusel.css" type="text/css" media="screen">
-    <?php include 'head.php'; ?>
+    <?php include 'head.php' ?>
   </head>
 
   <body>
+  
     <div class="contenedor">
       <div class="slides">
         <img src="img/carrusel/index/01.jpg" alt="" />
