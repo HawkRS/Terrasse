@@ -9,7 +9,7 @@
   </head>
 
   <body>
-  
+
     <div class="contenedor">
       <div class="slides">
         <img src="img/carrusel/index/01.jpg" alt="" />
@@ -37,7 +37,7 @@
           <div class="AG1">
             <div class="ART">
               <img class="AIma" src="img/ofertas/escala/XYimg2.png" alt="Asadores" id="AIma"/>
-              <li class="MLink"><a href="gazebos.php">GAZEBOS</a></li>
+              <li class="MLink"><a href="gazebo.php">GAZEBOS</a></li>
             </div>
             <div class="ART">
               <img class="AIma" src="img/ofertas/escala/XYimg2.png" alt="Firepit" id="AIma"/>
