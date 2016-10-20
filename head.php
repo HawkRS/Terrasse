@@ -3,23 +3,25 @@
   <link rel="stylesheet" href="css/index.css"  type="text/css" media="screen">
   <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Raleway|Roboto|Roboto+Condensed" rel="stylesheet">
 
-  <!--INICIA BARRA DE MENU-->
-  <img class="Logo"src="img/logos/terrasse.png" alt="Terrasse" id="MLogo"/>
-  <nav>
-    <ul>
-      <li class="inicio">     <a href="index.php">INICIO</a></li>
-      <li class="asadores">   <a href="asadores.php">ASADORES</a></li>
-      <li class="firepit">    <a href="firepit.php">FIREPIT</a></li>
-      <li class="gazebos">    <a href="gazebo.php">GAZEBOS</a></li>
-      <li class="accesorios"> <a href="accesorios.php">ACCESORIOS</a></li>
-      <li class="galeria">    <a href="galeria.php">GALERIA</a></li>
-      <li class="contacto">   <a href="contacto.php">CONTACTO</a></li>
-    </ul>
-  </nav>
-  <!--TERMINA BARRA DE MENU-->
+  <header >
+    <!--INICIA BARRA DE MENU-->
+    <img class="logo" src="img/logos/XYterrasse.png" alt="Terrasse" id="MLogo"/>
+    <nav>
+      <ul>
+        <li class="inicio">     <a href="index.php">INICIO</a></li>
+        <li class="asadores">   <a href="asadores.php">ASADORES</a></li>
+        <li class="firepit">    <a href="firepit.php">FIREPIT</a></li>
+        <li class="gazebos">    <a href="gazebo.php">GAZEBOS</a></li>
+        <li class="accesorios"> <a href="accesorios.php">ACCESORIOS</a></li>
+        <li class="galeria">    <a href="galeria.php">GALERIA</a></li>
+        <li class="contacto">   <a href="contacto.php">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <!--TERMINA BARRA DE MENU-->
+  </header>
 
   <!--INICIA BARRA LATERAL-->
-  <aside class="Barra">
+  <aside class="Barra" style="overflow:hidden">
 
     <!--INICIO DE SESION/INFORMACION DE SESION DE USUARIO-->
     <div id="contact-form" style="clear: both">
@@ -102,5 +104,4 @@
     <!--TERMINA PROMOS-->
   </aside>
   <!--TERMINA BARRA LATERAL-->
-
 </div>
