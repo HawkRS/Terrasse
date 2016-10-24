@@ -25,7 +25,7 @@
         <div class="inside">
             <h2>Nuestro Contacto</h2>
 				<div class="NContact">
-				    <address>
+				    <address class="span">
             <p>Lauro Badillo Diaz #420</p>
             <p>Col. Brisas de Chapala</p>
             <p>Tlaquepaque, Jalisco</p>
