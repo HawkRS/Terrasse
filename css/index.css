@@ -21,6 +21,7 @@ body{
   background-color: white;
   margin-top: 90px;
   font-family: 'Roboto', sans-serif;
+  list-style-type: none;
 }
 
 h3{
@@ -187,12 +188,12 @@ header {
 }
 
 .ofertas .overlay {
+  width: 100%;
+  height: 85%;
   position: absolute;
   z-index: 10;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 80%;
   background-color: rgba(0, 0, 0, 0.3);
 
   opacity: 0;
@@ -345,7 +346,7 @@ header {
 .EXTInfo {overflow:hidden}
 #h2form {padding: 5px; background-image:url("../img/barra.png"); repeat-x; color: black}*/
 #contacts-form {clear:right;width:100%;overflow:hidden}
-#contacts-form fieldset {border:none;float:left}
+#contacts-form fieldset {margin: 5px;border:none;float:left}
 #contacts-form .campo {clear:both;min-height:30px;height:auto}
 #contacts-form label {float:left;width:104px;font-weight:bold}
 #contacts-form input {width:267px;padding:2px 0 2px 3px;border:1px solid #d2d2d2;float:left}
