@@ -11,10 +11,10 @@
   <body>
     <script type="text/javascript" >
     //Función para validar que las cadenas sean digitos y espacios en blanco
-    function validarNum()
+    function validarNum(cad)
     {
       //var cad = /([A-Z0-9\s\\]+)/i;
-      var cad = document.getElementById('tel').value;
+      /*var cad = document.getElementById('tel').value;*/
       var cadAux = "";
 
       for (var i = 0; i < cad.length; i++) {
@@ -26,20 +26,6 @@
       if (isNaN(cadAux)) {
         alert("Solo tienen que ser digitos");
       }
-
-      var cad = document.getElementById('cel').value;
-      cadAux = "";
-
-      for (var i = 0; i < cad.length; i++) {
-          if (cad.charAt(i) != ' ') {
-            cadAux += cad.charAt(i);
-          }
-      }
-
-      if (isNaN(cadAux)) {
-        alert("Solo tienen que ser digitos");
-      }
-
     }
 ;
     //Validar la contraseña
@@ -71,11 +57,11 @@
 
               <!-- ingreso de telefono -->
               <label for="tel">Tel:<span>*</span></label>
-              <input type="text" name="tel" id="tel" required="required" placeholder="¡ Soló números !">
+              <input type="text" name="tel" id="tel" required="required">
 
               <!-- ingreso de número celular -->
               <label for="cel">Cel:</label>
-              <input type="text" name="cel" id="cel" placeholder="¡ Soló números !">
+              <input type="text" name="cel" id="cel">
 
               <!-- ingreso de Domicilio -->
               <label for="dom">Domicilio:<span>*</span></label>
@@ -93,7 +79,7 @@
               <input type="password" name="confirmaClv" id="confirmaClv" required="required">
 
               <!-- guardar datos -->
-              <button type="button" name="btG" id="btG" onclick="validarClv(),validarNum()">Guardar</button>
+              <button type="submit" name="btG" id="btG" onclick="validarNum(document.getElementById('tel').value), validarClv()">Guardar</button>
               <!-- calcelar registro -->
               <button type="button" name="btC" id="btC"><a href="index.php">Cancelar</a></button>
             </form>
