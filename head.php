@@ -3,11 +3,12 @@
   <link rel="stylesheet" href="css/index.css"  type="text/css" media="screen">
   <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Raleway|Roboto|Roboto+Condensed" rel="stylesheet">
 
-  <header >
+  <header>
     <!--INICIA BARRA DE MENU-->
     <img class="logo" src="img/logos/XYterrasse.png" alt="Terrasse" id="MLogo"/>
     <nav>
       <ul>
+        <li class="busqueda"><img class="bsc-ico" src="img/bsc.png" alt="Buscar articulos en TERRASSE" /></li>
         <li class="inicio">     <a href="index.php">INICIO</a></li>
         <li class="asadores">   <a href="asadores.php">ASADORES</a></li>
         <li class="firepit">    <a href="firepit.php">FIREPIT</a></li>
@@ -21,7 +22,7 @@
   </header>
 
   <!--INICIA BARRA LATERAL-->
-  <aside class="Barra" style="overflow:hidden">
+  <aside class="Barra">
 
     <!--INICIO DE SESION/INFORMACION DE SESION DE USUARIO-->
     <div id="contact-form" style="clear: both">
