@@ -4,8 +4,10 @@
 }
 
 .contenedor {
-  width: 65%;
-  margin: 10px 0px 5px 35%;
+  width: 75%;
+  margin-top: 5% ;
+  margin-left: 25%;
+  padding-top: 4%;
 }
 
 .slides {
