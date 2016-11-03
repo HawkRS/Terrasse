@@ -9,43 +9,93 @@
   clear: both;
 }
 
-.bsc-ico{
+/*ESTILO DEL MENU PRINCIPAL*/
+.menu_Nav {
+ width: 100%;
+ background-color: white;
+ border-top: 5px solid #4a88f4;
+ border-bottom: 5px solid #4a88f4;
+ padding: 5px 0;
+
+ top: 38px;
+}
+
+.menu_BS {
   width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  height: 38px;
+  background-color: black;
+
+  top: 0px;
+}
+
+.menu_BS, .menu_Nav{
+  position: fixed;
+  z-index: 100;
+}
+
+/* Secciondes de busqueda y sesion */
+.busqueda {
+  padding: 5px;
+  float: left;
+}
+
+.sesion {
+  float: right;
+  padding: 5px;
+}
+
+#caja_Bqd {
+  width: 200px;
+  height: 24px;
+  margin-right: 5px;
+  position: relative;
+}
+
+#bt_bsc {
+  width: 32px;
+  height: 28px;
+  background-image: url('../img/bsc.png');
   background-color: white;
+  border-radius: 5px;
+  position: absolute;
 
-  -webkit-transition: 0.5s; /*Safari & Chrome*/
-  -moz-transition: 0.5s; /*Firefox*/
-  -ms-transition: 0.5s; /*IE*/
-  -o-transition: 0.5s; /*Opera*/
+  -webkit-transition: all 500ms ease-in-out; /* IE 9*/
+  -moz-transition: all 500ms ease-in-out; /* Firefox*/
+  -ms-transition: all 500ms ease-in-out; /* Safari y Chrome */
+  -o-transition: all 500ms ease-in-out; /* Opera */
 }
 
-.bsc-ico:hover{
-  border-radius: 25px;
-  opacity: 0.75;
+#bt_bsc:hover {
+  border-radius: 15px;
+  opacity: .75;
 }
 
-.busqueda{
-  width: 36px;
-  height: 36px;
-  margin-top: 10px;
-  margin-right: 25px;
-  border-radius: 25px;
+.sesion a, span{
+  color: white;
+  padding: 0px 5px;
+  text-decoration: none;
 }
 
+/*Menus de navegacion*/
 head {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
  }
 
-body{
+body {
   /*background-color: #E0E1DD;*/
   width: 100%;
-  background-color: white;
-  margin-top: 90px;
-  font-family: 'Roboto', sans-serif;
+  background-color: #f1f1f1;
+  font-family: arial, sans-serif;
+}
+
+/* tamaño para los elementos dentro del body */
+.info{
+  width: 90%;
+  margin: 10% 5% 0px 5%;
+
+  font-family: 'Roboto', sans-serif, arial;
   list-style-type: none;
 }
 
@@ -74,26 +124,16 @@ h4{
   float: right;
 }
 
- /*ESTILO DEL MENU PRINCIPAL*/
-header {
-  width: 100%;
-  background-color: white;
-  border-top: 5px solid #4a88f4;
-  border-bottom: 5px solid #4a88f4;
-  padding: 5px 0;
-
-  top: 0px;
-  position: fixed;
-  z-index: 100;
-}
  nav ul {
    background-color: #008c43;
    text-align: center;
  }
+
  nav li {
    font-size: 1.2em;
    height: 50px;
    border-bottom: 1px solid #888;
+   padding: 0px 15px;
  }
 
  nav a {
@@ -141,15 +181,12 @@ header {
 .Barra{
   width: 20%;
   /*background-color: #d1d3c4;*/
-  margin: 10px 0px 10px 5px;
+  margin: 20px 0px 10px 5px;
   border: 5px double black;
   /*display: flex;*/
   flex-direction: column;
   float: left;
   overflow: hidden;
-}
-.Sesion, .Promos{
-  /*border: 5px solid orange;*/
 }
 
 .ArtP{
