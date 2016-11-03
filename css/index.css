@@ -17,12 +17,12 @@
  border-bottom: 5px solid #4a88f4;
  padding: 5px 0;
 
- top: 38px;
+ top: 50px;
 }
 
 .menu_BS {
   width: 100%;
-  height: 38px;
+  height: 40px;
   background-color: black;
 
   top: 0px;
@@ -35,8 +35,8 @@
 
 /* Secciondes de busqueda y sesion */
 .busqueda {
-  padding: 5px;
   float: left;
+  padding: 5px;
 }
 
 .sesion {
@@ -47,8 +47,9 @@
 #caja_Bqd {
   width: 200px;
   height: 24px;
+  font-size: 14px;
   margin-right: 5px;
-  position: relative;
+  float: left;
 }
 
 #bt_bsc {
@@ -57,12 +58,12 @@
   background-image: url('../img/bsc.png');
   background-color: white;
   border-radius: 5px;
-  position: absolute;
 
   -webkit-transition: all 500ms ease-in-out; /* IE 9*/
   -moz-transition: all 500ms ease-in-out; /* Firefox*/
   -ms-transition: all 500ms ease-in-out; /* Safari y Chrome */
   -o-transition: all 500ms ease-in-out; /* Opera */
+
 }
 
 #bt_bsc:hover {
