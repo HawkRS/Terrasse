@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: arial, sans-serif;
+}
+
+/* Clase para evitar seleccionar información de relevancia para el sitio*/
+.importante {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select:none;
+}
+
+/* Estilo para el contenido de la información */
+.info{
+  width: 90%;
+  margin: 10% 5% 0px 5%;
+
+  font-family: 'Roboto', sans-serif, arial;
+  list-style-type: none;
+}
+
+.MSection{
+  /*width: 60%;*/
+  background-color: #d1d3c4;
+  border: 5px solid white;
+  display: flex;
+  flex-direction: column;
+}
+
+/********************** Estilo para la cabecera ******************************/
+.fijo {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+/*Menú con busqueda e inicio de sesion*/
+.menu_BS {
+  width: 100%;
+  background-color: black;
+  opacity: 0.9;
+  display: inline-block;
+  color: white;
+}
+
+/*seccion de busqueda*/
+.busqueda {
+  float: left;
+  padding: 5px;
+}
+
+/*seccion de sesion*/
+.sesion {
+  float: right;
+  padding: 10px;
+}
+
+.sesion a {
+  text-decoration: none;
+  color: white;
+}
+
+.sesion a:hover {
+  color: #4a88f4;
+  text-decoration: underline;
+}
+
+/*Menú de navegación a diferentes secciones del sitio*/
+.menu_Nav {
+  background-color: white;
+  border-top: 5px solid #4a88f4;
+  border-bottom: 5px solid #4a88f4;
+  padding: 5px 0;
+}
+
+/*Posicion fija para la sección de menús*/
+
+/* Estilo para la caja y boton de busqueda */
+#caja_B {
+  width: 200px;
+  height: 24px;
+  font-size: 14px;
+  margin-right: 5px;
+  float: left;
+}
+
+#bt_B {
+  width: 32px;
+  height: 28px;
+  background-image: url('../img/bsc.png');
+  background-color: white;
+  border-radius: 5px;
+
+  -webkit-transition: all 500ms ease-in-out; /* IE 9*/
+  -moz-transition: all 500ms ease-in-out; /* Firefox*/
+  -ms-transition: all 500ms ease-in-out; /* Safari y Chrome */
+  -o-transition: all 500ms ease-in-out; /* Opera */
+}
+
+#bt_B:hover {
+  border-radius: 15px;
+}
+
+/* Estilo para el logo del sitio */
+.logo {
+  margin-top: 10px;
+  margin-right: 30px;
+  padding: 3px;
+  background-color: white;
+  float: right;
+}
+
+/* Estilo para las opcines a diferentes secciones del sitio */
+#opciones ul {
+  background-color: #008c43;
+  text-align: center;
+}
+
+#opciones li {
+  font-size: 1.2em;
+   height: 50px;
+   border-bottom: 1px solid #888;
+   padding: 0px 15px;
+}
+
+#opciones a {
+  text-decoration: none;
+  color: white;
+  display: block;
+
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms; 
+}
+
+#opciones a:hover {
+  background-color: #28502E;
+}
+
+#opciones a:active {
+  background-color: #fff;
+  color: blue;
+  cursor: default;
+}
+
+/* Tamaño para las opcines del menú */
+@media screen and (min-width: 600px) {
+  #opciones li {
+    width: 150px;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: inline-block;
+  }
+
+  #opciones li:active {
+    background-color: #28502E;
+  }
+}
+
+/********************** Estilo para el pie de pagina ************************/
+footer {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 5px solid #4a88f4;
+  padding: 5px 0;
+
+  color: white;
+  font-size: 0.9em;
+  font-family: sans-serif, arial;
+  display: flex;
+  flex-direction: row;
+  background-color: #28502E;
+}
+
+footer section {
+  width: 33%;
+  border-right: 2px solid white;
+  padding: 0 10px;
+}
+
+/* Sección de cuenta */
+#cuenta ul {
+  list-style-type: none;
+  margin-left: 15%;
+  font-size: 1.2em;
+}
+
+#cuenta ul li {
+  padding: 12px;
+}
+
+#cuenta ul li::before {
+  content: "•";
+  color: white;
+  padding-right: 5px;
+}
+
+#cuenta ul li a img {
+  float: right;
+  margin-right: 15%;
+
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
+#cuenta ul li a img:hover {
+  -webkit-box-shadow: 6px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 6px 3px 5px 0px rgba(0,0,0,0.75);
+
+  border-radius: 15px;
+  background-color: white;
+  opacity: 0.8;
+}
+
+#cuenta ul li a:hover, #desarrolladores a h4:hover {
+  color: #4a88f4;
+  text-decoration: underline;
+}
+
+.contenedorD, .contenedorR {
+  width: 100%;
+  text-align: justify;
+}
+
+/* Desarrolladores del sitio */
+.contenedorD div {
+  width: 33%;
+  margin: 5% 0;
+  padding: 20px 0;
+  text-align: center;
+  float: left;
+}
+
+/* Redes sociales */
+.contenedorR a {
+  width: 20%;
+  margin: 4px;
+  padding: 0 15px;
+}
+
+.contenedorR a img {
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out; /* IE 9*/
+  -moz-transition: all 500ms ease-in-out; /* Firefox*/
+  -ms-transition: all 500ms ease-in-out; /* Safari y Chrome */
+  -o-transition: all 500ms ease-in-out; /* Opera */
+}
+
+.contenedorR a img:hover {
+  /*Soporte para distintos navegadores*/
+  transform: scale(1.25);
+  -ms-transform:scale(1.25); /* IE 9 */
+  -moz-transform:scale(1.25); /* Firefox*/
+  -webkit-transform:scale(1.25); /* Safari y Chrome*/
+  -o-transform:scale(1.25); /* Opera */
+}
+
+#cuenta a, #desarrolladores a{
+  color: white;
+  text-decoration: none;
+}
