@@ -1,36 +1,39 @@
-<div>
-  <link rel="icon" href="icono.ico">
-  <link rel="stylesheet" href="css/index.css"  type="text/css" media="screen">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Raleway|Roboto|Roboto+Condensed" rel="stylesheet">
+<link rel="icon" href="icono.ico">
+<link rel="stylesheet" href="css/general.css"  type="text/css" media="screen">
+<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Raleway|Roboto|Roboto+Condensed" rel="stylesheet">
 
-  <div class="menu_BS">
+<div class="fijo">
+
+  <!-- Sección para realizar busquedas -->
+  <section class="menu_BS">
     <div class="busqueda">
       <form method="post">
-        <input type="texto" name="caja_Bqd" id="caja_Bqd" placeholder="Buscar...">
-        <button type="button" name="bt_bsc" id="bt_bsc"></button>
+        <input type="text" name="caja_B" id="caja_B" placeholder="Buscar...">
+        <button type="button" name="bt_B" id="bt_B"></button>
       </form>
     </div>
 
-    <div class="sesion">
-      <a href="sesion.php"><span>Iniciar sesion</span></a>
+    <section class="sesion">
+      <a href="sesion.php">Iniciar sesion</a>
       <span>|</span>
-      <a href="registro.php"><span>Registrar</span></a>
-    </div>
-  </div>
+      <a href="registro.php">Registrar</a>
+    </section>
+  </section>
 
-  <div class="menu_Nav clear">
-    <!--INICIA BARRA DE MENU-->
-    <a href="equipo.php"><img class="logo" src="img/logos/XYterrasse.png" alt="Desarrolladores del sitio web" id="MLogo"/></a>
-    <nav>
+  <!-- Menú para navegar dentro de las diferentes secciones del sistio-->
+  <nav class="menu_Nav clear">
+    <a href="equipo.php"><img src="img/logos/XYterrasse.png" alt="Desarrolladores del sito web" class="logo"/></a>
+
+    <!--Opciones del menú-->
+    <nav id="opciones">
       <ul>
-        <li class="inicio">     <a href="index.php">INICIO</a></li>
-        <li class="asadores">   <a href="asadores.php">ASADORES</a></li>
-        <li class="firepit">    <a href="firepit.php">FIREPIT</a></li>
-        <li class="gazebos">    <a href="gazebo.php">GAZEBOS</a></li>
-        <li class="accesorios"> <a href="accesorios.php">ACCESORIOS</a></li>
-        <li class="contacto">   <a href="contacto.php">CONTACTO</a></li>
+        <li><a href="index.php">Inicio</a></li>
+        <li><a href="asadores.php">Asadores</a></li>
+        <li><a href="firepit.php">Firepit</a></li>
+        <li><a href="gazebo.php">Gazebos</a></li>
+        <li><a href="accesorios.php">Accesorios</a></li>
+        <li><a href="contacto.php">Contacto</a></li>
       </ul>
     </nav>
-    <!--TERMINA BARRA DE MENU-->
-  </div>
+  </nav>
 </div>
