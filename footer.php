@@ -4,10 +4,10 @@
   <!-- menú de cuenta -->
   <nav >
     <ul>
-      <li><a href="#">Mi perfil <img src="img/perfil.png" alt="" /></a></li>
-      <li><a href="#">Ajustes <img src="img/ajuste.png" alt="" /></a></li>
-      <li><a href="#">Mi carrito <img src="img/carrito.png" alt="" /></a></li>
-      <li><a href="#">Historial de compras <img src="img/historial.png" alt="" /></a></li>
+      <li><a href="#">Mi perfil <img src="img/perfil.png" alt="Muestra el estado de actividad del usuario activo" /></a></li>
+      <li><a href="#">Ajustes <img src="img/ajuste.png" alt="Configuración para la cuenta del usuario" /></a></li>
+      <li><a href="#">Mi carrito <img src="img/carrito.png" alt="Articulos dentro de la lista de compras" /></a></li>
+      <li><a href="#">Historial de compras <img src="img/historial.png" alt="Historial de las compras realizadas" /></a></li>
     </ul>
   </nav>
 </section>
