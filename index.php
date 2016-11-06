@@ -17,7 +17,7 @@
         <img src="img/carrusel/galeria/03.jpg" alt="#" />
       </div>
     </div>
-    
+
     <div class="info">
       <!--INICIA BLOQUE PRINCIPAL-->
     <div class="bloque">
