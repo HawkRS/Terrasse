@@ -9,36 +9,6 @@
   </head>
 
   <body>
-    <script type="text/javascript" >
-    //Función para validar que las cadenas sean digitos y espacios en blanco
-    function validarNum(cad)
-    {
-      //var cad = /([A-Z0-9\s\\]+)/i;
-      /*var cad = document.getElementById('tel').value;*/
-      var cadAux = "";
-
-      for (var i = 0; i < cad.length; i++) {
-          if (cad.charAt(i) != ' ') {
-            cadAux += cad.charAt(i);
-          }
-      }
-
-      if (isNaN(cadAux)) {
-        alert("Solo tienen que ser digitos");
-      }
-    }
-;
-    //Validar la contraseña
-    function validarClv()
-    {
-      var cad1 = document.getElementById('clave');
-      var cad2 = document.getElementById('confirmaClv');
-
-      if (cad1.value != cad2.value) {
-        alert("La contraseña no coincide");
-      }
-    }
-    </script>
 
     <div id="envoltura">
       <div id="contenedor">
@@ -46,7 +16,7 @@
           <img src="img/logos/terrasse.png" alt="logo de la pagina" style="width: 200px"/>
         </div>
         <div id="cuerpo">
-            <form method="post">
+            <form method="post" id="nvoUsr">
               <!-- Ingreso del nombre del usuario -->
               <label for="nombre">Nombre:<span>*</span></label>
               <input type="text" name="nombre" id="nombre" required="required">
@@ -75,11 +45,11 @@
               <label for="clave">Contraseña:<span>*</span></label>
               <input type="password" name="clave" id="clave" required="required">
               <!-- Confirmar contraseña -->
-              <label for="confirmaClv">Confirmar contraseña:<span>*</span></label>
-              <input type="password" name="confirmaClv" id="confirmaClv" required="required">
+              <label for="cclave">Confirmar contraseña:<span>*</span></label>
+              <input type="password" name="cclave" id="cclave" required="required">
 
               <!-- guardar datos -->
-              <button type="submit" name="btG" id="btG" onclick="validarNum(document.getElementById('tel').value), validarClv()">Guardar</button>
+              <button type="button" name="btG" id="btG" onclick="validarForm()">Guardar</button>
               <!-- calcelar registro -->
               <button type="button" name="btC" id="btC"><a href="index.php">Cancelar</a></button>
             </form>
@@ -87,5 +57,9 @@
 
       </div>
     </div>
+
+    <!-- Llamada al archivo JS para validar el formulario -->
+    <script type="text/javascript" src="js/valRegistro.js"></script>
+
   </body>
 </html>
