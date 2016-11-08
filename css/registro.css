@@ -55,6 +55,10 @@ span, .error {
     text-align:center;
 }
 
+#cabecera img {
+  margin: 5% 0;
+}
+
 #cuerpo{
     background: white;
     border:solid #ccc;
