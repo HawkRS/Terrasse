@@ -1,9 +1,12 @@
 //Variables globales
 var form = document.getElementById('nvoUsr');
+var div;
 
 function validarForm(){
 
   var div_error;
+  var msj;
+
   var tel = document.getElementById('tel');
   var cel = document.getElementById('cel');
 
@@ -27,19 +30,37 @@ function validarForm(){
       form.removeChild(div_error);
   }
 
+  //Valida código postal
+  var cp = document.getElementById('cp');
+
+  if(! /^\d{5}$/.test(cp.value)){
+    div = document.createElement('div');
+    div.setAttribute('class','error');
+    div.setAttribute('id','error_cp');
+
+    msj = document.createTextNode('¡CP incorrecto!');
+    div.appendChild(msj);
+    form.insertBefore(div,cp.nextSibling);
+  }
+  else {
+    div_error = document.getElementById('error_cp');
+    if(div_error)
+      form.removeChild(div_error);
+  }
+
   //Valida que las contraseñas sean iguales
   var clv = document.getElementById('clave');
   var cclv = document.getElementById('cclave');
 
   if(clv.value !== cclv.value){
 
-    var div = document.createElement('div');
+    div = document.createElement('div');
 
     div.setAttribute('class','error');
     div.setAttribute('id','error_clv');
 
-    var msg = document.createTextNode('¡Las contraseñas no coincidén!');
-    div.appendChild(msg);
+    msj = document.createTextNode('¡Las contraseñas no coincidén!');
+    div.appendChild(msj);
     form.insertBefore(div,cclv.nextSibling);
   }
   else {
@@ -69,12 +90,12 @@ function valNum(cad){
 //Función para insertar mensaje con erro para el telefono y celular
 function mensajeE(ent,tpError){
 
-  var div = document.createElement('div');
+  div = document.createElement('div');
   div.setAttribute('class','error');
   div.setAttribute('id',tpError);
 
   //Mensaje de error
-  var msg = document.createTextNode('¡Debes escribir solo números!');
-  div.appendChild(msg);
+  var msj = document.createTextNode('¡Debes escribir solo números!');
+  div.appendChild(msj);
   form.insertBefore(div,ent.nextSibling);
 }
