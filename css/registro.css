@@ -1,27 +1,33 @@
 body{
-    background:#cc9;
+    background: #f1f1f1;
     /*background:#181907;*/
     font-family:Arial, Helvetica, sans-serif;
     font-size:12px;
-    margin: 0;
 }
 
-#registrar{
-        float:left;
-        width:80%;
-        font-size:24px;
-        font-weight:bold;
-        color:#FFF;
-        text-align:right;
+.error {
+  margin: 5px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  text-decoration: underline;
+}
+
+span, .error {
+  color: red;
+  opacity: 0.9;
+}
+
+#nvoUsr {
+  overflow: hidden;
 }
 
 #envoltura{
-    position:absolute;
     /*left y top al 50% para que quede centrado en la pantalla*/
-    left:50%;
-    top:40%;
-    margin-left:-165px;
-    margin-top: -210px;
+    margin-top: 2.5%;
+    margin-left: 35%;
+    /*margin-left:-165px;
+    margin-top: -210px;*/
     width: 400px;
 
 }
@@ -50,7 +56,7 @@ body{
 }
 
 #cuerpo{
-    background:#ececec;
+    background: white;
     border:solid #ccc;
     /*aumentando el 2px 'aparece' un borde*/
     border-width: 2px 0;
@@ -58,11 +64,11 @@ body{
 }
 
 #btG {
-  margin: 10px 5px 15px;
+  margin: 10px 5px 15px 0;
 }
 
 #btC {
-  margin: 10px 20px 15px;
+  margin: 10px 20px 15px 0;
 }
 
 #btC a {
@@ -72,18 +78,23 @@ body{
 
 #btG, #btC {
   width: 100px;
-  background-color: white;
+  border-color: #006799;
   border-radius: 5px;
   padding: 5px;
 }
 
 #btG:hover, #btC:hover {
-  background-color: gray;
+
 }
 
 label{
-    color: #666;
-    font-weight: bold
+  color: #666;
+  font-weight: bold;
+  font-size: 1.1em;
+
+  margin: 5px;
+  padding-right: 50%;
+
 }
 
 input{
@@ -91,9 +102,22 @@ input{
     border-radius:5px; /*probar con 10px se hacen ovalados los inputs*/
     box-shadow: 2px 2px 3px 1px rgba(0,0,0,.8);
     font:bold 12px Arial, Helvetica, sans-serif;
-    height: 24px;
-    line-height: 20px;
-    padding:2px;
-    margin: 5px;
-    width: 300px;
+
+    width: 250px;
+    height: 20px;
+    margin: 8px 0;
+}
+
+#cp {
+  width: 50px;
+  margin-left: -40%;
+  margin-right: 6px;
+}
+
+#cclave {
+  margin-right: 100px;
+}
+
+#tel, #cel {
+  width: 150px;
 }
