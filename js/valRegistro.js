@@ -12,21 +12,25 @@ function validarForm(){
 
   //Valida el telefono
   if (valNum(tel.value)) {
-    mensajeE(tel,'error_tel');
+    div_error = document.getElementById('error_tel');
+    if(div_error === null)
+      mensajeE(tel,'error_tel');
   }
   else {
     div_error = document.getElementById('error_tel');
-    if(div_error)
+    if(div_error !== null)
       form.removeChild(div_error);
   }
 
   //Valida el celular
   if (valNum(cel.value)) {
-    mensajeE(cel,'error_cel');
+    div_error = document.getElementById('error_cel');
+    if(div_error === null)
+      mensajeE(cel,'error_cel');
   }
   else {
     div_error = document.getElementById('error_cel');
-    if(div_error)
+    if(div_error !== null)
       form.removeChild(div_error);
   }
 
@@ -34,17 +38,20 @@ function validarForm(){
   var cp = document.getElementById('cp');
 
   if(! /^\d{5}$/.test(cp.value)){
-    div = document.createElement('div');
-    div.setAttribute('class','error');
-    div.setAttribute('id','error_cp');
+    div_error = document.getElementById('error_cp');
+    if(div_error === null){
+      div = document.createElement('div');
+      div.setAttribute('class','error');
+      div.setAttribute('id','error_cp');
 
-    msj = document.createTextNode('¡CP incorrecto!');
-    div.appendChild(msj);
-    form.insertBefore(div,cp.nextSibling);
+      msj = document.createTextNode('¡CP incorrecto!');
+      div.appendChild(msj);
+      form.insertBefore(div,cp.nextSibling);
+    }
   }
   else {
     div_error = document.getElementById('error_cp');
-    if(div_error)
+    if(div_error !== null)
       form.removeChild(div_error);
   }
 
@@ -65,7 +72,7 @@ function validarForm(){
   }
   else {
     div_error = document.getElementById('error_clv');
-    if(div_error)
+    if(div_error !== null)
       form.removeChild(div_error);
   }
 }
