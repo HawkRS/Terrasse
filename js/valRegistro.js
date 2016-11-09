@@ -14,7 +14,7 @@ function validarForm(){
   if (valNum(tel.value)) {
     div_error = document.getElementById('error_tel');
     if(div_error === null)
-      mensajeE(tel,'error_tel');
+      mensajeE(tel,'error_tel','¡Debes teclear solo números!');
   }
   else {
     div_error = document.getElementById('error_tel');
@@ -26,7 +26,7 @@ function validarForm(){
   if (valNum(cel.value)) {
     div_error = document.getElementById('error_cel');
     if(div_error === null)
-      mensajeE(cel,'error_cel');
+      mensajeE(cel,'error_cel','¡Debes teclear solo números!');
   }
   else {
     div_error = document.getElementById('error_cel');
@@ -39,15 +39,8 @@ function validarForm(){
 
   if(! /^\d{5}$/.test(cp.value)){
     div_error = document.getElementById('error_cp');
-    if(div_error === null){
-      div = document.createElement('div');
-      div.setAttribute('class','error');
-      div.setAttribute('id','error_cp');
-
-      msj = document.createTextNode('¡CP incorrecto!');
-      div.appendChild(msj);
-      form.insertBefore(div,cp.nextSibling);
-    }
+    if(div_error === null)
+      mensajeE(cp,'error_cp','¡CP incorrecto!');
   }
   else {
     div_error = document.getElementById('error_cp');
@@ -55,25 +48,28 @@ function validarForm(){
       form.removeChild(div_error);
   }
 
-  //Valida que las contraseñas sean iguales
+  //Valida que las contraseñas sean iguales y este en un rango de 6 a 20 carácteres
   var clv = document.getElementById('clave');
   var cclv = document.getElementById('cclave');
 
-  if(clv.value !== cclv.value){
+  switch (valClv(clv,cclv)) {
 
-    div = document.createElement('div');
+    case 'dif': div_error = document.getElementById('error_cclave');
+            if(div_error === null)
+              mensajeE(cclv,'error_cclave','¡Las contraseñas no coincidén!');
+      break;
 
-    div.setAttribute('class','error');
-    div.setAttribute('id','error_clv');
+    case 'tam': div_error = document.getElementById('error_clave');
+            if(div_error === null)
+              mensajeE(clv,'error_clave','¡La contraseña debe estar en un rango de 6 a 20 carácteres!');
+      break;
 
-    msj = document.createTextNode('¡Las contraseñas no coincidén!');
-    div.appendChild(msj);
-    form.insertBefore(div,cclv.nextSibling);
-  }
-  else {
-    div_error = document.getElementById('error_clv');
-    if(div_error !== null)
-      form.removeChild(div_error);
+    default:  div_error = document.getElementById('error_clave');
+              if(div_error !== null)
+                form.removeChild(div_error);
+              div_error = document.getElementById('error_cclave');
+              if(div_error !== null)
+                form.removeChild(div_error);
   }
 }
 
@@ -95,14 +91,30 @@ function valNum(cad){
 }
 
 //Función para insertar mensaje con erro para el telefono y celular
-function mensajeE(ent,tpError){
+function mensajeE(ent,tpError,mensaje){
 
   div = document.createElement('div');
   div.setAttribute('class','error');
   div.setAttribute('id',tpError);
 
   //Mensaje de error
-  var msj = document.createTextNode('¡Debes escribir solo números!');
+  var msj = document.createTextNode(mensaje);
   div.appendChild(msj);
   form.insertBefore(div,ent.nextSibling);
+}
+
+//Función para validar la contraseña
+function valClv(clv,cclv){
+  clv = document.getElementById('clave');
+  estado = 'ext';
+
+  if(clv.value.length >= 6 && clv.value.length <= 20){
+    cclv = document.getElementById('cclave');
+    if(clv.value !== cclv.value)
+      estado = 'dif';
+  }
+  else
+    estado = 'tam';
+
+  return estado;
 }
