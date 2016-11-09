@@ -31,8 +31,6 @@
       <a href="#"><img src="img/RS/face.png" alt="Facebook" id="Rfb"/></a>
       <a href="#"><img src="img/RS/googleplus.png" alt="Google plus" id="Rg+"/></a>
       <a href="#"><img src="img/RS/twitter.png" alt="Twitter" id="Rtw"/></a>
-      <a href="#"><img src="img/RS/telegram.png" alt="Telegram" id="Rtl"/></a>
-      <a href="#"><img src="img/RS/whatsapp.png" alt="Whatsapp" id="Rwsp"/></a>
     </div>
 
   </article>
