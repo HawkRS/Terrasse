@@ -11,6 +11,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 
   text-decoration: underline;
+  float: left;
 }
 
 span, .error {
@@ -24,12 +25,11 @@ span, .error {
 
 #envoltura{
     /*left y top al 50% para que quede centrado en la pantalla*/
-    margin-top: 2.5%;
+    margin-top: 1.5%;
     margin-left: 35%;
     /*margin-left:-165px;
     margin-top: -210px;*/
     width: 400px;
-
 }
 
 #contenedor{
@@ -43,6 +43,8 @@ span, .error {
     -webkit-border-radius:5px;
     -moz-border-radius:10px;
     border-radius:10px;
+
+    width: 100%;
 }
 
 #cabecera{
@@ -82,9 +84,11 @@ span, .error {
 
 #btG, #btC {
   width: 100px;
+  font-size: 1.2em;
   border-color: #006799;
   border-radius: 5px;
   padding: 5px;
+  float: right;
 }
 
 #btG:hover, #btC:hover {
@@ -96,8 +100,8 @@ label{
   font-weight: bold;
   font-size: 1.1em;
 
-  margin: 5px;
   padding-right: 50%;
+  float: left;
 
 }
 
@@ -107,15 +111,16 @@ input{
     box-shadow: 2px 2px 3px 1px rgba(0,0,0,.8);
     font:bold 12px Arial, Helvetica, sans-serif;
 
-    width: 250px;
+    width: 300px;
     height: 20px;
     margin: 8px 0;
+    float: left;
 }
 
 #cp {
   width: 50px;
   margin-left: -40%;
-  margin-right: 6px;
+  margin-right: 10px;
 }
 
 #cclave {
