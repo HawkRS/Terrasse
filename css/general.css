@@ -271,6 +271,13 @@ footer section {
   -moz-transform:scale(1.25); /* Firefox*/
   -webkit-transform:scale(1.25); /* Safari y Chrome*/
   -o-transform:scale(1.25); /* Opera */
+
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  -o-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+
+  border-radius: 5px;
 }
 
 #cuenta a, #desarrolladores a{
