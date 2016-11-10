@@ -74,7 +74,7 @@
                 <label for="cclave">Confirmar contraseña:<span>*</span></label>
                 <input type="password" name="cclave" id="cclave" required="required">
               <!-- guardar datos -->
-              <button type="button" name="btG" id="btG" onclick="validarForm()">Guardar</button>
+              <button type="button" name="btG" id="btG" onclick="valRegistro()">Guardar</button>
               <!-- calcelar registro -->
               <button type="button" name="btC" id="btC"><a href="index.php">Cancelar</a></button>
             </form>
