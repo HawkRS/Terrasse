@@ -80,7 +80,7 @@ function valNum(cad){
   var estado = false;
 
   for(var i=0; i<cad.length; i++ ){
-    if(cad.charAt(i) != ' ')
+    if(cad.charAt(i) != ' ' && cad.charAt(i) != '-')
       cadAux += cad.charAt(i);
   }
 
