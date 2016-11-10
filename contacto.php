@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>TERRASSE</title>
     <link rel="stylesheet" href="css/carrusel.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/contacto.css" media="screen" type="text/css">
     <?php include 'head.php';?>
   </head>
 
@@ -18,55 +19,85 @@
         <img src="img/carrusel/contacto/04.jpg" alt="#" />
       </div>
     </div>
-    
+
     <div class="info">
         <!--INICIA SECCION PRINCIPAL-->
-        <section class="MSection">
+        <section class="MSection posicion">
           <!--INICIA INFO DE CONTACTO-->
-          <div class="inside">
-              <h2>Nuestro Contacto</h2>
-  				<div class="NContact">
-  				    <address class="span">
-              <p>Lauro Badillo Diaz #420</p>
-              <p>Col. Brisas de Chapala</p>
-              <p>Tlaquepaque, Jalisco</p>
-              <p>Telefonos:  36-70-69-91  |  333-968-9393</p>
-              <p>Ventas@Terrasse.com.mx</p>
-  				    </address>
-  				    <p class="EXTInfo"><b>Mas Información:</b><br>
-  				        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  				</div>
-            </div>
-          <!--TERMINA INFO DE CONTACTO-->
+          <section class="importante dir">
+            <p>
+              <b>Nuestro contacto:</b> <br><br>
+              Lauro Badillo Díaz #420 <br>
+              Col. Badillo de Chapala <br>
+              Talquepaque, Jalisco <br><br>
+              Telefono: 36-70-69-91  |  333-368-9393 <br>
+              e-mail: Ventas@Terrasse.com.mx
+            </p>
+          </section>
+
           <!--INICIA FORMULARIO DE CONTACTO-->
-          <div class="contform">
-          <h2 id="h2form">Formulario de Contacto</h2>
-              <form id="contacts-form" action="." oninput="range_control_value.value = range_control.valueAsNumber">
-  				<fieldset>
-  				    <div class="campo">
-  				        <label>Nombre: </label>
-  				        <input title="Se Necesita un Nombre" type="text" value="" required />
-  				    </div>
-  				    <div class="campo">
-  				        <label>E-mail: </label>
-  				        <input type="email" value="" required />
-  				    </div>
-  				    <div class="campo">
-  				        <label>Website:    </label>
-  				        <input type="text" value="" placeholder="Ingresa la URL de tu Página" />
-  				    </div>
-  				    <div class="campo">
-  				        <label>Mensaje:    </label>
-  				        <textarea cols="1" rows="1" required></textarea>
-  				    </div>
-                      <button id="boton" type="submit">Enviar Mensaje</button>
-  				</fieldset>
-              </form>
+          <div class="contenedorF">
+            <p>
+              <b>Si deceas contactarnos:</b>
+            </p>
+            <form method="post" id="contactoForm">
+              <label for="nombreC">Nombre:<span>*</span></label>
+              <input type="text" name="nambreC" id="nombreC" required="required">
+
+              <label for="emailC">e-mail:<span>*</span></label>
+              <input type="email" name="emailC" id="emailC" placeholder="usuario@ejemplo.com" required="required">
+
+              <label for="telC">Telefono:<span>*</span></label>
+              <input type="text" name="telC" id="telC" required="required">
+
+              <label for="swC">Sitio web:</label>
+              <input type="text" name="swC" id="swC" placeholder="www.tu-sitio-web.com">
+
+              <label for="msjC">Mensaje:<span>*</span></label>
+              <textarea name="msjC" id="msjC" rows="8" cols="40" required="required"></textarea>
+
+              <button type="button" name="enviarC" id="enviarC" onclick="validarForm()">Enviar mensaje</button>
+            </form>
           </div>
-          <!--TERMINA FORMULARIO DE CONTACTO-->
         </section>
       </div>
+
+      <!--Script para validar el telefono-->
+      <script type="text/javascript">
+        var form = document.getElementById('contactoForm');
+
+        function validarForm(){
+          var tel = document.getElementById('telC');
+          var cadAux = "";
+
+          for(var i=0; i<telC.value.length; i++)
+            if(telC.value.charAt(i) != ' ' && telC.value.charAt(i) != '-')
+              cadAux += telC.value.charAt(i);
+
+          if(isNaN(cadAux)){
+            var div_error = document.getElementById('error_tel');
+            if(div_error === null)
+              mensajeE(tel,'error_tel','¡Soló debes teclear números!');
+          }
+          else{
+            var div_error = document.getElementById('error_tel');
+            if(div_error !== null)
+              form.removeChild(div_error);
+          }
+
+        }
+
+        function mensajeE(ent,tpError,mensaje){
+          var div = document.createElement('div');
+          div.setAttribute('class','error');
+          div.setAttribute('id','error_tel');
+
+          var msj = document.createTextNode(mensaje);
+          div.appendChild(msj);
+          form.insertBefore(div,ent.nextSibling);
+        }
+
+      </script>
 
       <!--Script para activar el carrusel-->
       <script src="js/jquery.js"></script>
