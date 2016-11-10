@@ -30,11 +30,10 @@ body {
 }
 
 .MSection{
-  /*width: 60%;*/
+  width: 100%;
   background-color: #d1d3c4;
   border: 5px solid white;
-  display: flex;
-  flex-direction: column;
+  overflow: auto;
 }
 
 /********************** Estilo para la cabecera ******************************/
