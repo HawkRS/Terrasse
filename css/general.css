@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .clear {
@@ -29,7 +30,6 @@ body {
 .MSection{
   width: 100%;
   background-color: #d1d3c4;
-  border: 5px solid white;
   overflow: auto;
 }
 
@@ -161,119 +161,44 @@ body {
   }
 
   #opciones li:active {
-    background-color: #28502E;
+    background-color: #164b31;
   }
 }
 
 /********************** Estilo para el pie de pagina ************************/
 footer {
-  width: 100%;
-  margin: 10px 0;
-  padding: 5px 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   font-size: 0.9em;
+}
+.Footer{
+  padding: 1.2em;
+  background-color: #164b31;
   display: flex;
-  flex-direction: row;
+  flex-flow: row;
+}
+.Fcont{width: 100%;}
+
+.Fcont ul li a{
+  font-size: 0.9em;
+  color: #00c865;
+  text-decoration: none;
+}
+
+.Develop{
+  color: white;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
   background-color: #333;
 }
 
-footer section {
-  width: 33%;
-  border-right: 2px solid white;
-  padding: 0 10px;
+.Equipo{
+  margin: auto;
+  display: flex;
+  flex-flow: row;
+  font-size: .5em;
 }
-
-/* Sección de cuenta */
-#cuenta ul {
-  list-style-type: none;
-  margin-left: 15%;
-  font-size: 1.2em;
-}
-
-#cuenta ul li {
-  padding: 12px;
-}
-
-#cuenta ul li::before {
-  content: "•";
-  color: white;
-  padding-right: 5px;
-}
-
-#cuenta ul li a img {
-  float: right;
-  margin-right: 15%;
-
-  transition: 300ms;
-  -webkit-transition: 300ms;
-  -moz-transition: 300ms;
-  -ms-transition: 300ms;
-  -o-transition: 300ms;
-}
-
-#cuenta ul li a img:hover {
-  -webkit-box-shadow: 6px 3px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px 3px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 6px 3px 5px 0px rgba(0,0,0,0.75);
-
-  border-radius: 15px;
-  background-color: white;
-  opacity: 0.8;
-}
-
-#cuenta ul li a:hover, #desarrolladores a h4:hover {
-  color: #4a88f4;
-  text-decoration: underline;
-}
-
-.contenedorD, .contenedorR {
-  width: 100%;
-  text-align: justify;
-}
-
-/* Desarrolladores del sitio */
-.contenedorD div {
-  width: 33%;
-  margin: 5% 0;
-  padding: 20px 0;
-  text-align: center;
-  float: left;
-}
-
-/* Redes sociales */
-.contenedorR a {
-  margin: 4px;
-  padding: 0 15px;
-
-  display: inline-block;
-}
-
-.contenedorR a img {
-  transition: all 500ms ease-in-out;
-  -webkit-transition: all 500ms ease-in-out; /* IE 9*/
-  -moz-transition: all 500ms ease-in-out; /* Firefox*/
-  -ms-transition: all 500ms ease-in-out; /* Safari y Chrome */
-  -o-transition: all 500ms ease-in-out; /* Opera */
-}
-
-.contenedorR a img:hover {
-  /*Soporte para distintos navegadores*/
-  transform: scale(1.25);
-  -ms-transform:scale(1.25); /* IE 9 */
-  -moz-transform:scale(1.25); /* Firefox*/
-  -webkit-transform:scale(1.25); /* Safari y Chrome*/
-  -o-transform:scale(1.25); /* Opera */
-
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-  -o-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-
-  border-radius: 5px;
-}
-
-#cuenta a, #desarrolladores a{
-  color: white;
-  text-decoration: none;
-}
+.Member{margin: 1em;}
+h6, h5{font-size: .4em;text-align: center; color: white;text-decoration: none; list-style-type: none;}
+h4{font-size: 1em;}
