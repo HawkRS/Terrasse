@@ -3,7 +3,7 @@
   {
     public function ejecutar()
     {
-      $this->ejecutar();
+      $this->mostrar();
     }
 
     public function mostrar()
