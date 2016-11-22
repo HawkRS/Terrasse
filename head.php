@@ -15,25 +15,24 @@
 
     <section class="sesion">
       <p>
-        <a href="index.php">Inicio</a> |
         <a href="sesion.php">Iniciar sesion</a> |
         <a href="registro.php">Registrar</a>
       </p>
     </section>
   </section>
-
+  <img src="img/logos/terrasse.png" alt="TERRASSE" class="logo" title="TERRASSE"/>
   <!-- Menú para navegar dentro de las diferentes secciones del sistio-->
   <nav class="menu_Nav clear">
-    <img src="img/logos/XYterrasse.png" alt="Desarrolladores del sito web" class="logo" title="Articulos para terrazas"/>
 
     <!--Opciones del menú-->
     <nav id="opciones">
       <ul>
-        <li><a href="asadores.php">Asadores</a></li>
-        <li><a href="firepit.php">Firepit</a></li>
-        <li><a href="gazebo.php">Gazebos</a></li>
-        <li><a href="accesorios.php">Accesorios</a></li>
-        <li><a href="contacto.php">Contacto</a></li>
+        <li><a href="index.php">INICIO</a></li>
+        <li><a href="asadores.php">ASADORES</a></li>
+        <li><a href="firepit.php">FIREPIT</a></li>
+        <li><a href="gazebo.php">GAZEBOS</a></li>
+        <li><a href="accesorios.php">ACCESORIOS</a></li>
+        <li><a href="contacto.php">CONTACTO</a></li>
       </ul>
     </nav>
   </nav>
