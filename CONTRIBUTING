@@ -1,56 +1,10 @@
-Aqui iremos poniendo los errores o pendientes que tengamos, sera nuestra to-do-list, favor de ir marcando con cual estan trabajando
-para no estar varios trabajando sobre el mismo problema o mejora al mismo tiempo(hacer uso efectivo de nuestro tiempo)
+LA FUENTE QUE USAREMOS ES MONTSERRAT Y SU RESPECTIVA FAMILIA SIN UTILIZAR NI ITALIC NI BOLD
 
-Ahora la lista de los issues que tenemos:
 
-Utilizar etiqueta figure
-
-Agregar parte administrativa
-
-Carpetas abreviadas y server
-
-Modificar botones
-
-Corregir diseño de formularios
-
-Corregir pagina de galeria
-
-Usar la etiqueta article
-
-Definir un estandar de codificación
-
-Nombres de clases que sean CLAROS
-
-Media queries al final del CSS o en otro archivo
-
-Capitalización de clases (CSS)
-
-Aprovechar font-awesome  -Carlos
-
-Los bloques del footer con navegación dejan mucho espacio perdido a la izquierda design
-
-No es común usar titulos en los LIs
-
-Tamaño adecuado de imagenes   -Carlos
-
-CSS adecuado a li's o ul's
-
-FALTAS DE ORTOGRAFÍA
-
-Navegación adecuada para el usuario UX
-
-Darle sentido a los alt de las imagenes
-
-Usar la etiqueta article  -Carlos
-
-Usar button (la etiqueta)
-
-Clase clear
-
-Etiqueta address
-
-Correos en web
-
-Ruta para favicon
+LA PALETA DE COLORES ES LA SIGUIENTE:
+VERDE CLARO:  008c43
+VERDE OSCURO: 164b31
+NEGRO:           333
+GRIS:         d1d3c4
 
 
