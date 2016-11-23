@@ -1,4 +1,7 @@
 <?php
+  
+  require("Modelo/modelo.php");
+  $articulos= getArticulos();
   session_start();
 
   if(isset($_GET) && !empty($_GET['ctrl']))
@@ -30,6 +33,12 @@
       case 'accesorios':
         require_once('Controlador/accesoriosCtrl.php');
         $controlador = new accesoriosCtrl();
+        break;
+
+	case 'productos':
+       
+        require('Vista/productos.php');
+        $controlador = new productosCtrl();
         break;
 
       case 'contacto':
