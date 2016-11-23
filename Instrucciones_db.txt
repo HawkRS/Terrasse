@@ -1,0 +1,61 @@
+instrucciones
+
+----------------------------------------------------------------------------
+primero accederemos a mysql para crear la base de datos
+user@user-pc:~$ mysql -u root -p
+Enter password: 
+
+----------------------------------------------------------------------------
+crearemos la base de datos para nuestro proyecto
+mysql> create database terrasse;
+Query OK, 1 row affected (0,03 sec)
+
+---------------------------------------------------------------------------
+revisaremos que la base de datos se creo correctamente
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |          |
+| terrasse           |
++--------------------+
+6 rows in set (0,06 sec)
+
+-----------------------------------------------------------------------------
+cambiaremos para poder utilizar la base de datos que habiamos creado
+mysql> use terrasse
+Database changed
+
+---------------------------------------------------------------------------------------------
+crearemos las tablas correspondientes
+mysql> create table registro (nombre varchar(50) not null, username varchar(20) not null primary key, telefono varchar(15) not null, cel varchar(15), domicilio varchar(30) not null, colonia varchar(20) not null, cp int(6) not null, email varchar(30) not null, pass varchar(20) not null);
+
+mysql> create table pedido (id_pedido int not null primary key auto_increment, username varchar(20) not null, fecha date not null, id_articulo int not null, cantidad int not null, total double not null);
+
+mysql> create table producto (id_producto int not null primary key auto_increment, foto varchar(20) not null, descripcion text not null, precio double not null);
+
+
+---------------------------------------------------------------------------------------------
+insertaremos datos a una de nuestras tablas para poder agregar cosas
+mysql> insert into producto (id_producto, foto, descripcion, precio) values (null, 'foto', 'este es un asador para vender', '200.30');
+
+mysql> insert into producto (id_producto, foto, descripcion, precio) values (null, 'aqui va la foto', 'este es otro asador para vender', '200.30');
+Query OK, 1 row affected (0,06 sec)
+
+
+---------------------------------------------------------------------------------------------
+en el archivo localizado en 
+Terrasse/db/conexion.php
+editaremos la siguiente linea de codigo
+$conexion = mysql_connect("localhost","root","");
+
+colocando nuestro localhost, root y contraseña
+
+y en esta linea de codigo
+$database = mysql_select_db("terrasse",$conexion);
+
+cambiaremos por el nombre de la base de datos que utilizamos
+--------------------------------------------------------------------------------------------- 
+
