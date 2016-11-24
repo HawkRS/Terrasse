@@ -18,12 +18,15 @@
         </div>
 
         <div id="cuerpo">
-            <form method="post" id="nvoUsr">
+            <form method="post" id="nvoUsr" action="?ctrl=usuario&act=registrar">
               <!-- Ingreso del nombre del usuario -->
 
                 <label for="nombre">Nombre:<span>*</span></label>
                 <input type="text" name="nombre" id="nombre" required="required">
-
+                <label for="apellidoP">Apellido paterno:<span>*</span></label>
+                <input type="text" name="apellidoP" id="apellidoP" required="required">
+                <label for="apellidoM">Apellido materno:<span>*</span></label>
+                <input type="text" name="apellidoM" id="apellidoM" required="required">
 
               <!-- Nombre de usuario para entrar al sistema -->
 
@@ -74,17 +77,14 @@
                 <label for="cclave">Confirmar contraseña:<span>*</span></label>
                 <input type="password" name="cclave" id="cclave" required="required">
               <!-- guardar datos -->
-              <button type="button" name="btG" id="btG" onclick="valRegistro()">Guardar</button>
+              <button type="button" name="btG" id="btG" onclick="validarForm()">Guardar</button>
               <!-- calcelar registro -->
               <button type="button" name="btC" id="btC"><a href="?ctrl=inicio&act=">Cancelar</a></button>
             </form>
         </div>
-
       </div>
     </div>
-
     <!-- Llamada al archivo JS para validar el formulario -->
     <script type="text/javascript" src="js/valRegistro.js"></script>
-
   </body>
 </html>
