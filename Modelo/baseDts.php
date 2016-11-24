@@ -4,7 +4,10 @@
   class baseDts
   {
     public static $instancia;
-    
+    private $usuario = USUARIO;
+    private $clave = CLAVE;
+    private $servidor = SERVIDOR;
+    private $base_dts = BASE_DTS;
 
     public function __construct()
     {
@@ -31,7 +34,7 @@
     //conexión a la base de datos
     public function conectar()
     {
-      $this->conexion = new mysqli();
+      $this->conexion = new mysqli($this->servidor, $this->usuario, $this->clave, $this->base_dts);
       if($this->conexion->connect_error)
         die($this->conexion->connect_error);
     }
