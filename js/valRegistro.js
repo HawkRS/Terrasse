@@ -7,6 +7,9 @@ function validarForm(){
   var div_error;
   var msj;
 
+  //revisa los espacios en blanco del nombre y nombre de usuario
+  vacio();
+
   var tel = document.getElementById('tel');
   var cel = document.getElementById('cel');
 
@@ -16,11 +19,8 @@ function validarForm(){
     if(div_error === null)
       mensajeE(tel,'error_tel','¡Debes teclear solo números!');
   }
-  else {
-    div_error = document.getElementById('error_tel');
-    if(div_error !== null)
-      form.removeChild(div_error);
-  }
+  else
+    borrarDiv('error_tel');
 
   //Valida el celular
   if (valNum(cel.value)) {
@@ -28,11 +28,8 @@ function validarForm(){
     if(div_error === null)
       mensajeE(cel,'error_cel','¡Debes teclear solo números!');
   }
-  else {
-    div_error = document.getElementById('error_cel');
-    if(div_error !== null)
-      form.removeChild(div_error);
-  }
+  else
+    borrarDiv('error_cel');
 
   //Valida código postal
   var cp = document.getElementById('cp');
@@ -42,11 +39,8 @@ function validarForm(){
     if(div_error === null)
       mensajeE(cp,'error_cp','¡CP incorrecto!');
   }
-  else {
-    div_error = document.getElementById('error_cp');
-    if(div_error !== null)
-      form.removeChild(div_error);
-  }
+  else
+    borrarDiv('error_cp');
 
   //Valida que las contraseñas sean iguales y este en un rango de 6 a 20 carácteres
   var clv = document.getElementById('clave');
@@ -64,12 +58,8 @@ function validarForm(){
               mensajeE(clv,'error_clave','¡La contraseña debe estar en un rango de 6 a 20 carácteres!');
       break;
 
-    default:  div_error = document.getElementById('error_clave');
-              if(div_error !== null)
-                form.removeChild(div_error);
-              div_error = document.getElementById('error_cclave');
-              if(div_error !== null)
-                form.removeChild(div_error);
+    default: borrarDiv('error_clave');
+             borrarDiv('error_cclave');
   }
 }
 
@@ -105,11 +95,10 @@ function mensajeE(ent,tpError,mensaje){
 
 //Función para validar la contraseña
 function valClv(clv,cclv){
-  clv = document.getElementById('clave');
   estado = 'ext';
 
   if(clv.value.length >= 6 && clv.value.length <= 20){
-    cclv = document.getElementById('cclave');
+    borrarDiv('error_clave');//Se borra el div con el error del tamaño si estaba incorrecto
     if(clv.value !== cclv.value)
       estado = 'dif';
   }
@@ -117,4 +106,32 @@ function valClv(clv,cclv){
     estado = 'tam';
 
   return estado;
+}
+
+function vacio()
+{
+  var vec = [];
+  vec[0] = document.getElementById('nombre');
+  vec[1] = document.getElementById('apellidoP');
+  vec[2] = document.getElementById('apellidoM');
+  vec[3] = usrNom = document.getElementById('usrNom');
+
+  for(var i=0; i<vec.length; i++){
+    var error = 'erro_'+vec[i].id;
+
+    if(vec[i].value === null || vec[i].value.length === 0 || /^\s*$/.test(vec[i].value)){
+      var div_error = document.getElementById(error);
+      if(div_error === null)
+        mensajeE(vec[i],error,'¡No debe estar vacio!');
+    }
+    else
+      borrarDiv(error);
+  }
+}
+
+function borrarDiv(error)
+{
+  var div_error = document.getElementById(error);
+  if(div_error !== null)
+    form.removeChild(div_error);
 }
