@@ -36,5 +36,11 @@
         return true;
       return false;
     }
+
+    public function E_404()
+    {
+      $error = file_get_contents('Vista/404.html');
+      echo $error;
+    }
   }
 ?>
