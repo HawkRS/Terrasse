@@ -12,7 +12,7 @@
       $vista = file_get_contents("Vista/gazebo.html");
       $footer = file_get_contents("Vista/footer.html");
 
-      echo $head.$vista.$footer;
+      echo "<title>Terrasse | Gazebos</title>".$head.$vista.$footer;
     }
   }
 ?>

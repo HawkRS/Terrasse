@@ -12,7 +12,7 @@
       $vista = file_get_contents("Vista/firepit.html");
       $footer = file_get_contents("Vista/footer.html");
 
-      echo $head.$vista.$footer;
+      echo "<title>Terrase | Firepit</title>".$head.$vista.$footer;
     }
 
   }

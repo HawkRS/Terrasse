@@ -26,7 +26,7 @@
       $vista = file_get_contents("Vista/equipo.html");
       $footer = file_get_contents("Vista/footer.html");
 
-      echo $head.$vista.$footer;
+      echo "<title>Terrasse | Equipo</title>".$head.$vista.$footer;
     }
 
   }
