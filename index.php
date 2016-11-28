@@ -1,12 +1,12 @@
 <?php
-  
-  require("Modelo/modelo.php");
-  $articulos= getArticulos();
+
   session_start();
 
   if(isset($_GET) && !empty($_GET['ctrl']))
   {
     $controlador = $_GET['ctrl'];
+    $band = false;
+
     switch($controlador)
     {
       case '':
@@ -35,11 +35,11 @@
         $controlador = new accesoriosCtrl();
         break;
 
-	case 'productos':
-       
+	    /*case 'productos':
+
         require('Vista/productos.php');
         $controlador = new productosCtrl();
-        break;
+        break;*/
 
       case 'contacto':
         require_once('Controlador/contactoCtrl.php');
@@ -56,10 +56,14 @@
         $controlador = new equipoCtrl();
         break;
 
-      default: http_response_code(404);
+      default: require_once('ctrlEstandar.php');
+               $controlador = new ctrlEstandar();
     }
 
-    $controlador->ejecutar();
+    if($band)
+      $controlador->E_404();
+    else
+      $controlador->ejecutar();
   }
   else
   {
