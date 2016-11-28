@@ -1,5 +1,6 @@
 <?php
-  class inicioCtrl
+  require_once('ctrlEstandar.php');
+  class inicioCtrl extends ctrlEstandar
   {
 
     public function ejecutar()
@@ -13,7 +14,8 @@
             $this->mostrar();
             break;
 
-          default: http_response_code(404);
+          default: $controlador = new ctrlEstandar();
+                   $controlador->E_404();
         }
       }
       else
