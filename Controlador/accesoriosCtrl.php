@@ -12,7 +12,7 @@
       $vista = file_get_contents("Vista/accesorios.html");
       $footer = file_get_contents("Vista/footer.html");
 
-      echo $head.$vista.$footer;
+      echo "<title>Terrasse | Accesorios</title>".$head.$vista.$footer;
     }
   }
 ?>
