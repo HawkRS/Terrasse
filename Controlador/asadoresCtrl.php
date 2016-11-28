@@ -12,7 +12,7 @@
       $vista = file_get_contents("Vista/asadores.html");
       $footer = file_get_contents("Vista/footer.html");
 
-      echo $head.$vista.$footer;
+      echo "<title>Terrasse | Asadores</title>".$head.$vista.$footer;
     }
   }
 ?>
