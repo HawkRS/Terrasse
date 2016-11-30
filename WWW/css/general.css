@@ -21,10 +21,19 @@ body {
 }
 
 /* Estilo para el contenido de la información */
-.info{
+.Sin_slider, .Con_slider{
   width: 90%;
-  margin: 10% 5% 0px 5%;
   list-style-type: none;
+  margin-right: 5%;
+  margin-bottom: 15px;
+  margin-left: 5%;
+}
+.Sin_slider{
+  margin-top: 15%;
+}
+
+.Con_slider{
+  margin-top: 2.5%;
 }
 
 .MSection{
@@ -34,6 +43,7 @@ body {
 }
 
 /********************** Estilo para la cabecera ******************************/
+
 .fijo {
   font-family: 'Montserrat', sans-serif;
   width: 100%;
@@ -180,7 +190,7 @@ body {
   float: left;
 
   border: 5px double black;
-  background-image: url('../img/fondos/aqua.jpg');
+  background-image: url('../img/fondo1.jpg');
   background-attachment: fixed;
   padding: 35px 5px;
 }
@@ -265,19 +275,39 @@ footer {
 }
 
 .Develop{
+  width: 100%;
   color: white;
-  margin: auto;
   display: flex;
   flex-flow: column;
   background-color: #333;
+
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.Develop a{
+  text-decoration: none;
+  color: white;
+}
+
+.Develop a:hover{
+  color: #00c865;
 }
 
 .Equipo{
-  margin: auto;
+  margin: 5px auto;
   display: flex;
   flex-flow: row;
-  font-size: .5em;
 }
-.Member{margin: 1em;}
-h6, h5{font-size: .4em;text-align: center; color: white;text-decoration: none; list-style-type: none;}
+
+.Member{
+  margin: 1em;
+}
+.Member p{
+  font-size: 0.8em;
+  color: white;
+  text-decoration: underline;
+}
+
+h6, h5{font-size: 1.2em;text-align: center; color: white;text-decoration: none; list-style-type: none;}
 h4{font-size: 1em;}
