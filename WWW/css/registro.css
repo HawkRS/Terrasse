@@ -69,30 +69,20 @@ span, .error {
     padding:15px 35px;
 }
 
-#btG {
-  margin: 10px 5px 15px 0;
-}
-
-#btC {
-  margin: 10px 20px 15px 0;
-}
-
-#btC a {
-  text-decoration: none;
-  color: black;
-}
-
 #btG, #btC {
   width: 100px;
+  margin: 10px 20px 15px 0;
   font-size: 1.2em;
   border-color: #006799;
   border-radius: 5px;
   padding: 5px;
   float: right;
+  color: black;
 }
 
 #btG:hover, #btC:hover {
-
+  color: #00c865;
+  text-decoration: underline;
 }
 
 label{
@@ -119,8 +109,7 @@ input{
 
 #cp {
   width: 50px;
-  margin-left: -40%;
-  margin-right: 10px;
+  margin-left: -15%;
 }
 
 #cclave {
