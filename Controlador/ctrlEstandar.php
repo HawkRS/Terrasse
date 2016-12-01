@@ -23,6 +23,24 @@
       return false;
     }
 
+    public function head($titulo = "Terrasse | Inicio")
+    {
+      if($this->sesionInic())
+      {
+        $head = file_get_contents('Vista/head_sesion.html');
+        $ususario = $_SESSION['usuario'];
+        $head = str_replace("{usuario}",$usuario,$head);
+        $head = str_replace("{titulo}",$titulo,$head);
+      }
+      else
+      {
+        $head = file_get_contents('Vista/head.html');
+        $head = str_replace("{titulo}",$titulo,$head);
+      }
+
+      return $head;
+    }
+
     public function usrAdmin()
     {
       if(isset($_SESSION['tipo']) && $_SESSION['tipo'] == 'admin')
