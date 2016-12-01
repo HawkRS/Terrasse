@@ -64,7 +64,7 @@
   font-weight: 400;
 }
 
-.formulario h1 {
+h1 {
   text-align: center;
 }
 
@@ -123,23 +123,23 @@ p.eviar {
   border-radius: 5px;
 }
 
-#form_sesion p.eviar {
+.eviar {
   margin: 10px 0 20px;
 }
 
-.formulario form .entrada, .formulario form input[type='text']{
-  font-size: 16px;
-  width: auto;
+input[type='password'], input[type='text']{
+  font-size: 1.2em;
+  width: 85%;
   padding: 3px;
   margin: 2px 6px 16px 0;
 }
 
-.formulario form .grdSesion {
+.grdSesion {
   font-weight: 400;
   float: left;
 }
 
-.formulario form .grdSesion label {
+.grdSesion label {
   font-size: 12px;
   line-height: 19px;
 }
