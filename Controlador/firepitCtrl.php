@@ -1,5 +1,6 @@
 <?php
-  class firepitCtrl
+  require_once('ctrlEstandar.php');
+  class firepitCtrl extends ctrlEstandar
   {
     public function ejecutar()
     {
@@ -8,11 +9,11 @@
 
     public function mostrar()
     {
-      $head = file_get_contents("Vista/head.html");
+      $head = $this->head("Terrase | Firepit");
       $vista = file_get_contents("Vista/firepit.html");
       $footer = file_get_contents("Vista/footer.html");
 
-      echo "<title>Terrase | Firepit</title>".$head.$vista.$footer;
+      echo $head.$vista.$footer;
     }
 
   }

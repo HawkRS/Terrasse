@@ -1,5 +1,6 @@
 <?php
-  class accesoriosCtrl
+  require_once('ctrlEstandar.php');
+  class accesoriosCtrl extends ctrlEstandar
   {
     public function ejecutar()
     {
@@ -8,11 +9,11 @@
 
     public function mostrar()
     {
-      $head = file_get_contents("Vista/head.html");
+      $head = $this->head("Terrasse | Accesorios");
       $vista = file_get_contents("Vista/accesorios.html");
       $footer = file_get_contents("Vista/footer.html");
 
-      echo "<title>Terrasse | Accesorios</title>".$head.$vista.$footer;
+      echo $head.$vista.$footer;
     }
   }
 ?>

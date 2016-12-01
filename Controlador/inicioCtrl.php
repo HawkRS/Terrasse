@@ -24,11 +24,11 @@
 
     public function mostrar()
     {
-      $head = file_get_contents("Vista/head.html");
+      $head = $this->head();
       $vista = file_get_contents("Vista/inicio.html");
       $footer = file_get_contents("Vista/footer.html");
 
-      echo "<title>Terrasse | Inicio</title>".$head.$vista.$footer;
+      echo $head.$vista.$footer;
     }
   }
 ?>

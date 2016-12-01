@@ -1,5 +1,6 @@
 <?php
-  class asadoresCtrl
+  require_once('ctrlEstandar.php');
+  class asadoresCtrl extends ctrlEstandar
   {
     public function ejecutar()
     {
@@ -8,11 +9,11 @@
 
     public function mostrar()
     {
-      $head = file_get_contents("Vista/head.html");
+      $head = $this->head("Terrasse | Asadores");
       $vista = file_get_contents("Vista/asadores.html");
       $footer = file_get_contents("Vista/footer.html");
 
-      echo "<title>Terrasse | Asadores</title>".$head.$vista.$footer;
+      echo $head.$vista.$footer;
     }
   }
 ?>

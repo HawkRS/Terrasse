@@ -1,6 +1,6 @@
 <?php
-
-  class equipoCtrl
+  require_once('ctrlEstandar.php');
+  class equipoCtrl extends ctrlEstandar
   {
     public function ejecutar()
     {
@@ -13,7 +13,8 @@
             $this->mostrar();
             break;
 
-          default: http_response_code(404);
+          default: $controlador = new ctrlEstandar();
+                   $controlador->E_404();
         }
       }
       else
@@ -22,11 +23,11 @@
 
     public function mostrar()
     {
-      $head = file_get_contents("Vista/head.html");
+      $head = $this->head("Terrasse | Equipo");
       $vista = file_get_contents("Vista/equipo.html");
       $footer = file_get_contents("Vista/footer.html");
 
-      echo "<title>Terrasse | Equipo</title>".$head.$vista.$footer;
+      echo $head.$vista.$footer;
     }
 
   }

@@ -1,5 +1,6 @@
 <?php
-  class gazebosCtrl
+  require_once('ctrlEstandar.php');
+  class gazebosCtrl extends ctrlEstandar
   {
     public function ejecutar()
     {
@@ -8,11 +9,11 @@
 
     public function mostrar()
     {
-      $head = file_get_contents("Vista/head.html");
+      $head = $this->head("Terrasse | Gazebos");
       $vista = file_get_contents("Vista/gazebo.html");
       $footer = file_get_contents("Vista/footer.html");
 
-      echo "<title>Terrasse | Gazebos</title>".$head.$vista.$footer;
+      echo $head.$vista.$footer;
     }
   }
 ?>
