@@ -37,7 +37,7 @@
 
     public function agregarUsr()
     {
-      print_r($_POST);
+      var_dump($_POST);
       if(isset($_POST['nombre']) && isset($_POST['apellidoP']) && isset($_POST['apellidoM'])
 			&& isset($_POST['usrNom']) && isset($_POST['tel']) 	     && isset($_POST['cel'])
 			&& isset($_POST['dom'])    && isset($_POST['colonia']) 	 && isset($_POST['cp'])
