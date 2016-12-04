@@ -1,14 +1,6 @@
 <?php
   class ctrlEstandar
   {
-    public function iniciarSesion($idUsr,$clave)
-    {
-      $_SESSION['idUsr'] = $idUsr;
-      $_SESSION['clave'] = $clave;
-      $_SESSION['usuario'] = $usuario;
-      return true;
-    }
-
     public function cerrarSesion()
     {
       session_unset();
