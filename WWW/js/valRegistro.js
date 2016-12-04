@@ -6,6 +6,7 @@ function validarForm(){
 
   var div_error;
   var msj;
+  var contador = 0; //contador para validar que todos los campos sean correctos
 
   //revisa los espacios en blanco del nombre y nombre de usuario
   vacio();
@@ -19,8 +20,10 @@ function validarForm(){
     if(div_error === null)
       mensajeE(tel,'error_tel','¡Debes teclear solo números!');
   }
-  else
+  else{
     borrarDiv('error_tel');
+    contador++;
+  }
 
   //Valida el celular
   if (valNum(cel.value)) {
@@ -28,8 +31,10 @@ function validarForm(){
     if(div_error === null)
       mensajeE(cel,'error_cel','¡Debes teclear solo números!');
   }
-  else
+  else{
     borrarDiv('error_cel');
+    contador++;
+  }
 
   //Valida código postal
   var cp = document.getElementById('cp');
@@ -39,8 +44,10 @@ function validarForm(){
     if(div_error === null)
       mensajeE(cp,'error_cp','¡CP incorrecto!');
   }
-  else
+  else{
     borrarDiv('error_cp');
+    contador++;
+  }
 
   //Valida que las contraseñas sean iguales y este en un rango de 6 a 20 carácteres
   var clv = document.getElementById('clave');
@@ -60,7 +67,13 @@ function validarForm(){
 
     default: borrarDiv('error_clave');
              borrarDiv('error_cclave');
+             contador++;
   }
+alert(contador);
+  if(contador === 4)
+    return true;
+  else
+    return false;
 }
 
 //Funciónpara validar que las cadenas sean digitos y espacios en blanco
