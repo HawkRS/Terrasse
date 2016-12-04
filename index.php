@@ -56,6 +56,11 @@
         $controlador = new equipoCtrl();
         break;
 
+      case 'carrito':
+        require_once('Controlador/carritoCtrl.php');
+        $controlador = new carritoCtrl();
+        break;
+
       default: require_once('ctrlEstandar.php');
                $controlador = new ctrlEstandar();
     }
