@@ -8,7 +8,7 @@
     function __construct()
     {
       require_once('./Modelo/carritoMdl.php');
-      $this->model = new carritoMdl();
+      $this->modelo = new carritoMdl();
     }
 
     public function ejecutar()
