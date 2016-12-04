@@ -62,7 +62,8 @@
         break;
 
       case 'registro_Producto':
-        require_once('Controlador/ctrlEstandar.php');
+        require_once('Controlador/productoCtrl.php');
+        $controlador = new productoCtrl();
         break;
 
       default: require_once('Controlador/ctrlEstandar.php');
