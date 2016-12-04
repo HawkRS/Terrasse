@@ -18,7 +18,7 @@
         </div>
 
         <div class="cuerpo">
-            <form method="post" id="nvoUsr" action="?ctrl=usuario&act=registrar">
+            <form method="post" id="nvoUsr" action="?ctrl=usuario&act=registrar" onsubmit="return validarForm()">
               <!-- Ingreso del nombre del usuario -->
 
                 <label for="nombre">Nombre:<span>*</span></label>
@@ -42,7 +42,7 @@
               <!-- ingreso de número celular -->
 
                 <label for="cel">Cel:</label>
-                <input type="tel" name="cel" id="cel">
+                <input type="tel" name="cel" id="cel" required="required">
 
 
               <!-- ingreso de Domicilio -->
@@ -77,7 +77,7 @@
                 <label for="cclave">Confirmar contraseña:<span>*</span></label>
                 <input type="password" name="cclave" id="cclave" required="required">
               <!-- guardar datos -->
-              <button type="button" name="btG" id="btG" onclick="validarForm()">Guardar</button>
+              <button type="submit" name="btG" id="btG">Guardar</button>
               <!-- calcelar registro -->
               <button type="button" name="btC" id="btC" onclick="window.location='?ctrl=inicio&act='">Cancelar</button>
             </form>
