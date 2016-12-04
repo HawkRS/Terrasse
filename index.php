@@ -61,7 +61,11 @@
         $controlador = new carritoCtrl();
         break;
 
-      default: require_once('ctrlEstandar.php');
+      case 'registro_Producto':
+        require_once('Controlador/ctrlEstandar.php');
+        break;
+
+      default: require_once('Controlador/ctrlEstandar.php');
                $controlador = new ctrlEstandar();
     }
 
