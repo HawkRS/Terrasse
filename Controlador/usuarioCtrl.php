@@ -31,7 +31,8 @@
           $this->iniciarSesion();
           break;
 
-        default: http_response_code(404);
+        default: $controlador = new ctrlEstandar();
+                 $controlador->E_404();
       }
     }
 
