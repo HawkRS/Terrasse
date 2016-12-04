@@ -8,6 +8,7 @@
     private $clave = CLAVE;
     private $servidor = SERVIDOR;
     private $base_dts = BASE_DTS;
+    private $conexion;
 
     public function __construct()
     {
@@ -37,6 +38,11 @@
       $this->conexion = new mysqli($this->servidor, $this->usuario, $this->clave, $this->base_dts);
       if($this->conexion->connect_error)
         die($this->conexion->connect_error);
+    }
+
+    public function desconectar()
+    {
+      mysql_close($this->conexion);
     }
   }
 ?>
