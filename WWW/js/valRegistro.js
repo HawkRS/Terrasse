@@ -69,7 +69,7 @@ function validarForm(){
              borrarDiv('error_cclave');
              contador++;
   }
-alert(contador);
+
   if(contador === 4)
     return true;
   else
