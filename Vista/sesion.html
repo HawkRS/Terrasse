@@ -10,7 +10,7 @@
     <div class="formulario">
       <h1><a href="?ctrl=inicio&act=" tabindex="-1" title="Articulos para terrazas">Terrasse</a></h1>
 
-      <form id="form_sesion" method="post">
+      <form id="form_sesion" method="post" action="ctrl=usuario&act=inicSesion">
         <p>
           <label for="usrNom">Nombre de usuario o correo electrónico:<br></label>
           <input type="text" name="usrNom" id="usrNom" size="20">
@@ -27,7 +27,7 @@
         </p>
 
         <p class="enviar">
-          <button type="button" name="acceder" id="acceder" >Acceder</button>
+          <button type="submit" name="acceder" id="acceder" >Acceder</button>
         </p>
       </form>
       <p id="opc">
