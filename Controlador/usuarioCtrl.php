@@ -3,6 +3,14 @@
   require_once('ctrlEstandar.php');
   class usuarioCtrl extends ctrlEstandar
   {
+    private $modelo;
+
+    function __construct()
+    {
+      require_once('./Modelo/usuarioMdl.php');
+      $this->modelo = new usuarioMdl();
+    }
+
     public function ejecutar()
     {
       $accion = $_GET['act'];
@@ -17,6 +25,10 @@
 
         case 'sesion':
           echo file_get_contents("Vista/sesion.html");
+          break;
+
+        case 'inicSesion':
+          $this->iniciarSesion();
           break;
 
         default: http_response_code(404);
@@ -42,6 +54,11 @@
         $clave = $_POST['clave'];
         $cclave = $_POST['cclave'];
       }
+    }
+
+    public function iniciarSesion()
+    {
+      
     }
   }
 
