@@ -9,5 +9,11 @@
       parent::__construct();
       $this->conexion = baseDts::instanciaBD();
     }
+
+    public function sesion($usuario,$clv)
+    {
+      $consulta;
+      
+    }
   }
 ?>
