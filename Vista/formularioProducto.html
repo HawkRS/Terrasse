@@ -8,7 +8,7 @@
   <body>
     <div class="envoltura">
       <div class="cuerpo">
-        <form onsubmit="return validarRegistro();" action="?ctrl=producto&act=registrar" method="post" enctype="multipart/form-data">
+        <form onsubmit="return valProducto();" action="?ctrl=producto&act=registrar" method="post" enctype="multipart/form-data" id="producto">
           <label for="nomProducto">Nombre:<span class="requerido">*</span></label>
           <input type="text" name="nomProducto" id="nomProducto" required="required">
 
