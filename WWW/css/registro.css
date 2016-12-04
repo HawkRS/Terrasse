@@ -23,7 +23,7 @@ span, .error {
   overflow: hidden;
 }
 
-#envoltura{
+.envoltura{
     /*left y top al 50% para que quede centrado en la pantalla*/
     margin-top: 1.5%;
     margin-left: 35%;
@@ -32,7 +32,7 @@ span, .error {
     width: 400px;
 }
 
-#contenedor{
+.contenedor{
     background-color:#FF660B;
     /*background-color:#356AA0;*/
     /*box-shadow: 0 0 0 9px rgba(128,0,0,.1);*/
@@ -61,7 +61,7 @@ span, .error {
   margin: 5% 0;
 }
 
-#cuerpo{
+.cuerpo{
     background: white;
     border:solid #ccc;
     /*aumentando el 2px 'aparece' un borde*/
