@@ -33,7 +33,11 @@
 
     public function mostrar()
     {
-      
+      $head = $this->head("Terrasse | carrito");
+      $vista = file_get_contents('Vista/carrito.html');
+      $footer = file_get_contents('Vista/footer.html');
+
+      echo $head.$vista.$footer;
     }
   }
 ?>
