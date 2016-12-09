@@ -12,8 +12,10 @@
 
     public function sesion($usuario,$clv)
     {
-      $consulta;
-      
+      $consulta = 'SELECT * FROM Usuarios WHERE nomUsr = "'.$usuario.'" AND clave = "'.$clv.'" LIMIT 1';
+      $usuarios = $this->conexion->ejecutar($consulta)->resultado();
+
+      return $usuarios;
     }
   }
 ?>
