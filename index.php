@@ -15,31 +15,10 @@
         $controlador = new inicioCtrl();
         break;
 
-      case 'asadores':
-        require_once('Controlador/asadoresCtrl.php');
-        $controlador = new asadoresCtrl();
-        break;
-
-      case 'firepit':
-        require_once('Controlador/firepitCtrl.php');
-        $controlador = new firepitCtrl();
-        break;
-
-      case 'gazebos':
-        require_once('Controlador/gazebosCtrl.php');
-        $controlador = new gazebosCtrl();
-        break;
-
-      case 'accesorios':
-        require_once('Controlador/accesoriosCtrl.php');
-        $controlador = new accesoriosCtrl();
-        break;
-
-	    /*case 'productos':
-
+      case 'producto':
         require('Vista/productos.php');
         $controlador = new productosCtrl();
-        break;*/
+        break;
 
       case 'contacto':
         require_once('Controlador/contactoCtrl.php');
@@ -59,11 +38,6 @@
       case 'carrito':
         require_once('Controlador/carritoCtrl.php');
         $controlador = new carritoCtrl();
-        break;
-
-      case 'registro_Producto':
-        require_once('Controlador/productoCtrl.php');
-        $controlador = new productoCtrl();
         break;
 
       default: require_once('Controlador/ctrlEstandar.php');
