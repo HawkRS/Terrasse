@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Registro de producto</title>
-    <link rel="stylesheet" href="WWW/css/producto.css" media="screen">
-  </head>
-  <body>
+<link rel="stylesheet" href="WWW/css/producto.css" type="text/css" media="screen">
+
     <div class="envoltura">
       <div class="cuerpo">
         <form onsubmit="return valProducto();" action="?ctrl=producto&act=registrar" method="post" enctype="multipart/form-data" id="producto">
@@ -16,10 +10,10 @@
           <input type="number" name="cantidad" id="cantidad" min="1" value="1">
 
           <label for="tipo">Tipo:</label>
-          <input type="radio" name="tipo" id="tipo" value="accesorio" checked><span>Accesorio<br></span>
-          <input type="radio" name="tipo" id="tipo" value="asador"><span>Asador<br></span>
-          <input type="radio" name="tipo" id="tipo" value="firepit"><span>Firepit<br></span>
-          <input type="radio" name="tipo" id="tipo" value="gazebo"><span>Gazebo<br></span>
+          <input type="radio" name="t_Accesorio" id="t_Accesorio" value="accesorio" checked><span>Accesorio<br></span>
+          <input type="radio" name="t_Asador"    id="t_Asador"    value="asador"><span>Asador<br></span>
+          <input type="radio" name="t_Firepit"   id="t_Firepit"   value="firepit"><span>Firepit<br></span>
+          <input type="radio" name="t_Gazebo"    id="t_Gazebo"    value="gazebo"><span>Gazebo<br></span>
 
           <label for="descripcion">Descripción:<span class="requerido">*</span></label>
           <textarea name="descripcion" id="descripcion" rows="5" cols="60" required="required"></textarea>
@@ -44,6 +38,3 @@
     </figure>
 
     <script type="text/javascript" src="WWW/js/registroProducto.js"></script>
-
-  </body>
-</html>
