@@ -8,7 +8,7 @@
     function __construct()
     {
       require_once('./Modelo/usuarioMdl.php');
-      //$this->modelo = new usuarioMdl();
+      $this->modelo = new usuarioMdl();
     }
 
     public function ejecutar()
@@ -69,7 +69,14 @@
 
     public function iniciarSesion()
     {
+      if(isset($_POST['usrNom']) && isset($_POST['usrClv']))
+      {
+        var_dump($_POST);
+        $usuario = $_POST['usrNom'];
+        $clave = $_POST['usrClv'];
 
+        $this->modelo->sesion($usuario,$clave);
+      }
     }
   }
 
