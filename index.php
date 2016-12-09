@@ -16,8 +16,8 @@
         break;
 
       case 'producto':
-        require('Vista/productos.php');
-        $controlador = new productosCtrl();
+        require('Controlador/productoCtrl.php');
+        $controlador = new productoCtrl();
         break;
 
       case 'contacto':
