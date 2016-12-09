@@ -18,13 +18,23 @@
       {
         case 'registrar':
           if(empty($_POST))
-            echo file_get_contents("Vista/registro.html");
+          {
+            $head = $this->head("Terrasse | Registro");
+            $vista = file_get_contents("Vista/registro.html");
+            $footer = file_get_contents("Vista/footer.html");
+
+            echo $head.$vista.$footer;
+          }
           else
             $this->agregarUsr();
           break;
 
         case 'sesion':
-          echo file_get_contents("Vista/sesion.html");
+          $head = $this->head("Terrasse < Acceso");
+          $vista = file_get_contents("Vista/sesion.html");
+          $footer = file_get_contents("Vista/footer.html");
+
+          echo $head.$vista.$footer;
           break;
 
         case 'inicSesion':
