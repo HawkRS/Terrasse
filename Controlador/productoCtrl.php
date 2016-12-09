@@ -29,7 +29,7 @@
 
         case 'registrar':
           if(empty($_POST))
-            echo file_get_contents('Vista/formularioProducto.html');
+            $this->mostrar("Terrasse | Alta producto","Vista/formularioProducto.html");
           else
             $this->agregarPrd();
           break;
