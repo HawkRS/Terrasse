@@ -1,0 +1,28 @@
+header, aside, section, footer{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  padding: 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header  {background-color: teal;width: 100%; height: 25%; flex-wrap: border-box;}
+/*section {background-color: gray; }
+aside   {background-color: gray;}
+footer  {background-color: olive; width: 100%;}*/
+html, body{background-color: silver; margin: 0; padding: 0;}
+
+#Logo{
+  flex:auto;
+  border: 1px solid red;
+  width: 15em; height: inherit;;
+}
+.opt{
+  flex: auto;
+  width: 15em;
+}
+.opt, .menu, .navegador{
+  border: 1px solid red;
+  background-color: gray;
+}
